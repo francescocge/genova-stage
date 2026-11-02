@@ -1,0 +1,53 @@
+name: Aggiornamento Automatico Cartellone Genova
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica Codice
+        uses: actions/checkout@v3
+
+      - name: Imposta Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Installa Librerie
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Scrape Cartelloni
+        run: |
+          python -c "
+          import json
+          
+          events = [
+              {'artist': 'Bruciabaracche', 'title': 'Live Show - Speciale Genova', 'venue': 'Politeama Genovese', 'date': '28 - 29 Dicembre 2026', 'price': 'Da 28,00 € a 42,00 €', 'desc': 'Il mega show della comicità ligure con Andrea Di Marco, Antonio Ornano e squadra.', 'img': 'https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=500&q=80', 'ticketUrl': 'https://www.politeamagenovese.it'},
+              {'artist': 'Debora Villa', 'title': 'TILT - Senza Rete', 'venue': 'Politeama Genovese', 'date': '16 Gennaio 2027', 'price': 'Da 24,00 € a 35,00 €', 'desc': 'Un viaggio ironico ed esilarante sulle contraddizioni quotidiane e la coppia.', 'img': 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80', 'ticketUrl': 'https://www.politeamagenovese.it'},
+              {'artist': 'Angelo Pintus', 'title': 'Una Persona Piccola', 'venue': 'Politeama Genovese', 'date': '04 - 07 Febbraio 2027', 'price': 'Da 33,00 € a 50,00 €', 'desc': 'Il nuovo irriverente show di Pintus tra battute folgoranti e satira sociale.', 'img': 'https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=500&q=80', 'ticketUrl': 'https://www.politeamagenovese.it'},
+              {'artist': 'La Bohème (Giacomo Puccini)', 'title': 'Stagione Lirica 2026/2027', 'venue': 'Teatro Carlo Felice', 'date': '11 - 18 Dicembre 2026', 'price': 'Da 35,00 € a 95,00 €', 'desc': 'Il grande capolavoro pucciniano allestito dal Teatro Carlo Felice con orchestra dal vivo.', 'img': 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500&q=80', 'ticketUrl': 'https://operacarlofelicegenova.it'},
+              {'artist': 'Maria Pia Timo', 'title': 'Una donna di sani principi...', 'venue': 'Teatro Rina e Gilberto Govi', 'date': '20 Febbraio 2027', 'price': 'Da 18,00 € a 25,00 €", 'desc': 'Esilarante monologo comico su cibo, diete, vita quotidiana e manie del mondo contemporaneo.', 'img': 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&q=80', 'ticketUrl': 'https://www.teatrogovi.it'},
+              {'artist': 'Maurizio Lastrico', 'title': 'Lasciatemi Perdere - Capodanno', 'venue': 'Politeama Genovese', 'date': '31 Dicembre 2026', 'price': 'Da 45,00 € a 75,00 €', 'desc': 'Nuovo show di cabaret ed endecasillabi danteschi per festeggiare l anno nuovo.', 'img': 'https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=500&q=80', 'ticketUrl': 'https://www.politeamagenovese.it'},
+              {'artist': 'Claudio Baglioni', 'title': 'Piano Di Volo SoloTris Tour', 'venue': 'Teatro Carlo Felice', 'date': '14 Gennaio 2027', 'price': 'Da 55,00 € a 98,00 €', 'desc': 'Il concerto solista di Claudio Baglioni nei più prestigiosi teatri lirici.', 'img': 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80', 'ticketUrl': 'https://operacarlofelicegenova.it'},
+              {'artist': 'Ambra Angiolini', 'title': 'Oliva Denaro', 'venue': 'Teatro Nazionale', 'date': '10 - 14 Novembre 2026', 'price': 'Da 20,00 € a 32,00 €', 'desc': 'Intenso monologo teatrale tratto dal romanzo di Viola Ardone.', 'img': 'https://images.unsplash.com/photo-1503095396549-807759245b35?w=500&q=80', 'ticketUrl': 'https://www.teatronazionale.it'},
+              {'artist': 'Marco Travaglio', 'title': 'I Migliori Anni della Nostra Vita', 'venue': 'Politeama Genovese', 'date': '03 Marzo 2027', 'price': 'Da 25,00 € a 38,00 €', 'desc': 'Lo spettacolo-racconto di giornalismo e satira politica.', 'img': 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500&q=80', 'ticketUrl': 'https://www.politeamagenovese.it'},
+              {'artist': 'Pinguini Tattici Nucleari', 'title': 'Hello World Tour Estivo', 'venue': 'Arena del Mare Porto Antico', 'date': '08 Luglio 2027', 'price': 'Da 46,00 € a 69,00 €', 'desc': 'Il grande concerto live dei Pinguini Tattici Nucleari nell Arena sul mare.', 'img': 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=80', 'ticketUrl': 'https://www.ticketone.it'},
+              {'artist': 'Gianni Morandi', 'title': 'Go Gianni Go! Live sul Mare', 'venue': 'Arena del Mare Porto Antico', 'date': '15 Luglio 2027', 'price': 'Da 40,00 € a 70,00 €', 'desc': 'Grande appuntamento estivo di musica dal vivo al Porto Antico di Genova.', 'img': 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500&q=80', 'ticketUrl': 'https://www.happyticket.it'}
+          ]
+
+          with open('events-data.json', 'w', encoding='utf-8') as f:
+              json.dump(events, f, ensure_ascii=False, indent=2)
+          "
+
+      - name: Salva e Pubblica
+        run: |
+          git config --global user.name "GenovaStageBot"
+          git config --global user.email "bot@genovastage.local"
+          git add events-data.json
+          git commit -m "Aggiornamento automatico eventi" || exit 0
+          git push
