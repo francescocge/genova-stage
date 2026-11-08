@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<!-- Genova Stage - versione v1.7 (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
+<!-- Genova Stage - versione v1.8 (da v1.7: filtro per genere comicità/musical/opera/ecc, filtri che si aggiornano con i dati nuovi, intestazione non fissa) (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genova Stage v1.7</title>
+<title>Genova Stage v1.8</title>
 <style>
 :root{--bg:#0e1a2b;--card:#16263b;--card2:#1d3150;--gold:#d4af37;--gold2:#f0dc8c;--txt:#f3f5f8;--dim:#9fb0c6;--line:#2a3f5e}
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 body{background:var(--bg);color:var(--txt);min-height:100vh;font-size:16px}
-header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#14243a,var(--bg));padding:18px 14px 12px;border-bottom:1px solid var(--line);text-align:center}
+header{position:relative;z-index:50;background:linear-gradient(180deg,#14243a,var(--bg));padding:18px 14px 12px;border-bottom:1px solid var(--line);text-align:center}
 h1{font-size:1.6rem;color:var(--gold);letter-spacing:1px;text-transform:uppercase}
 .ver{font-size:.75rem;color:var(--dim);margin:2px 0 12px}
 .ctl{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
@@ -36,6 +36,9 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:
 .btn:active{transform:translateY(3px);box-shadow:0 1px 0 #7d6417}
 .btn.s{background:linear-gradient(180deg,#2c4468,#1f3252);color:var(--gold2);box-shadow:0 4px 0 #101c30;margin-top:10px}
 .poster{height:230px;background:#0e1a2b}.poster img{width:100%;height:100%;object-fit:cover;display:block}.mposter{margin:-22px -22px 16px;border-radius:20px 20px 0 0;overflow:hidden;max-height:320px}.mposter img{width:100%;display:block;object-fit:cover}.x{z-index:2;text-shadow:0 0 6px #000}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.chip{flex:none;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--dim);font-size:.9rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--card2);color:var(--gold2);border-color:var(--gold)}
 .empty{grid-column:1/-1;text-align:center;color:var(--dim);padding:40px 10px}
 .modal{display:none;position:fixed;inset:0;background:rgba(5,10,20,.85);z-index:100;padding:16px;overflow-y:auto}
 .mc{background:var(--card);border:1px solid var(--gold);border-radius:20px;max-width:500px;margin:24px auto;padding:22px;position:relative}
@@ -56,6 +59,7 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:
       <button class="tab" data-c="concerto">Concerti</button>
     </div>
     <select id="venue"><option value="all">Tutti i luoghi</option></select>
+    <div class="chips" id="chips"></div>
   </div>
 </header>
 <div class="count" id="count"></div>
@@ -296,16 +300,26 @@ Fire of Georgia|Royal National Ballet of Georgia|V|2026-12-11||t|Danza|
 Claudio Baglioni|La vita è adesso|A|2027-07-07||c|Concerto|Da 75,00 € a 150,00 €`.split("\n").forEach(r=>{const f=r.split("|");const e={a:f[0],t:f[1],v:V[f[2]][0],u:V[f[2]][1],s:f[3],e:f[4]||f[3],c:f[5]==="c"?"concerto":"teatro",k:f[6],p:pf(f[7]||"")};e.d=fmt(e.s,e.e);EVENTS.push(e)});
 const MESI=["GEN","FEB","MAR","APR","MAG","GIU","LUG","AGO","SET","OTT","NOV","DIC"];
 const $=id=>document.getElementById(id);
-let cat="all",sel=null;
+let cat="all",gen="all",sel=null;
 const now=new Date(),today=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 EVENTS.sort((x,y)=>x.s<y.s?-1:1);
-[...new Set(EVENTS.map(e=>e.v))].sort().forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;$("venue").appendChild(o)});
+function buildFilters(){
+  const vs=$("venue"),cur=vs.value;
+  vs.innerHTML='<option value="all">Tutti i luoghi</option>';
+  [...new Set(EVENTS.map(e=>e.v))].sort().forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;vs.appendChild(o)});
+  vs.value=[...vs.options].some(o=>o.value===cur)?cur:"all";
+  const n={};EVENTS.filter(e=>e.e>=today).forEach(e=>{n[e.k]=(n[e.k]||0)+1});
+  const g=Object.keys(n).sort((a,b)=>n[b]-n[a]);
+  if(gen!=="all"&&!n[gen])gen="all";
+  $("chips").innerHTML=["all",...g].map(x=>`<button class="chip${x===gen?" on":""}" data-g="${esc(x)}">${x==="all"?"Tutti i generi":esc(x)}</button>`).join("");
+}
+buildFilters();
 
 function render(){
   const q=$("q").value.toLowerCase().trim(),vn=$("venue").value;
   const list=EVENTS.map((e,i)=>({e,i})).filter(({e})=>
-    e.e>=today && (cat==="all"||e.c===cat) && (vn==="all"||e.v===vn) &&
+    e.e>=today && (cat==="all"||e.c===cat) && (gen==="all"||e.k===gen) && (vn==="all"||e.v===vn) &&
     (e.a+" "+e.t+" "+e.v).toLowerCase().includes(q));
   $("count").textContent=list.length+(list.length===1?" evento":" eventi");
   $("grid").innerHTML=list.length?list.map(({e,i})=>{
@@ -344,11 +358,12 @@ $("grid").addEventListener("click",e=>{const b=e.target.closest("[data-i]");if(b
 $("close").onclick=()=>$("modal").style.display="none";
 $("modal").addEventListener("click",e=>{if(e.target.id==="modal")$("modal").style.display="none"});
 $("ics").onclick=ics;
+$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;gen=b.dataset.g;buildFilters();render()});
 let UPDATED="2026-11-07";const UPDATE_URL="events-data.json";
-function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri & Concerti · v1.7 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
+function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri & Concerti · v1.8 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
 setVer();render();
 // AGGIORNAMENTO ONLINE: a ogni apertura la pagina scarica events-data.json (nella stessa cartella). Se non c'è internet o il file manca, usa i dati incorporati qui sopra.
-(async()=>{try{const x=await fetch(UPDATE_URL,{cache:"no-store"});if(!x.ok)return;const j=await x.json(),L=Array.isArray(j)?j:j.events;if(!Array.isArray(L)||!L.length)return;EVENTS.length=0;L.forEach(e=>{e.e=e.e||e.s;e.d=e.d||fmt(e.s,e.e);EVENTS.push(e)});EVENTS.sort((a,b)=>a.s<b.s?-1:1);if(j.updated)UPDATED=j.updated;setVer();render()}catch(e){}})();
+(async()=>{try{const x=await fetch(UPDATE_URL,{cache:"no-store"});if(!x.ok)return;const j=await x.json(),L=Array.isArray(j)?j:j.events;if(!Array.isArray(L)||!L.length)return;EVENTS.length=0;L.forEach(e=>{e.e=e.e||e.s;e.d=e.d||fmt(e.s,e.e);EVENTS.push(e)});EVENTS.sort((a,b)=>a.s<b.s?-1:1);if(j.updated)UPDATED=j.updated;buildFilters();setVer();render()}catch(e){}})();
 </script>
 </body>
 </html>

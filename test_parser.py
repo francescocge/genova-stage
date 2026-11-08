@@ -77,4 +77,19 @@ assert len([k for k in q if k[0] == "Maurizio Lastrico"]) == 2          # nessun
 assert q[("Pink Floyd Legend","2027-03-05")]["c"] == "concerto" and q[("Pink Floyd Legend","2027-03-05")]["p"] == "50/42/35"
 assert q[("Angelo Duro","2027-04-21")]["e"] == "2027-04-22" and q[("Dire Straits Reload","2027-05-11")]["p"] == "49/44/38"
 assert q[("Eleazaro Rossi","2027-04-05")]["t"] == "Kamikaze"
+# Locandine
+assert A.og_image('<meta property="og:image" content="/img/a.jpg?x=1&amp;y=2">', "https://t.it/eventi/a.htm") == "https://t.it/img/a.jpg?x=1&y=2"
+assert A.og_image('<meta content="https://t.it/b.jpg" property="og:image" />', "https://t.it/") == "https://t.it/b.jpg"
+assert A.og_image('<meta name="description" content="x">', "https://t.it/") == ""
+import os, tempfile, json
+os.chdir(tempfile.mkdtemp())
+json.dump({"Manuale": "https://x.it/m.jpg", "Rotto": "non-un-link"}, open("locandine.json", "w"))
+pagine = {"https://t.it/eventi/a.htm": '<meta property="og:image" content="/a.jpg">'}
+A.get = lambda u, b=False: pagine.get(u) if u in pagine else '<meta property="og:image" content="/logo.png">'
+E = [A.ev("A","","V","https://t.it/eventi/a.htm","2026-12-01","2026-12-01","t","T",src="nazionale")]
+E += [A.ev(f"G{i}","","V",f"https://t.it/eventi/g{i}.htm","2026-12-0%d"%(i+2),"2026-12-0%d"%(i+2),"t","T",src="nazionale") for i in range(5)]
+E += [A.ev("Manuale","","V","","2026-12-09","2026-12-09","t","T",src="manuale"), A.ev("Rotto","","V","","2026-12-10","2026-12-10","t","T",src="manuale")]
+A.locandine(E, [])
+im = {e["a"]: e["img"] for e in E}
+assert im["A"] == "https://t.it/a.jpg" and im["G0"] == "" and im["Manuale"] == "https://x.it/m.jpg" and im["Rotto"] == ""
 print("TUTTI I TEST OK:", len(n), "Nazionale,", len(c), "Carlo Felice,", len(g), "GOG,", len(t), "Tosse,", len(p), "Politeama")

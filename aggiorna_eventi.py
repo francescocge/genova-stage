@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# aggiorna_eventi.py v1.0 - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
+# aggiorna_eventi.py v1.1 (aggiunge le locandine) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
 # Regola di sicurezza: se un sito cambia e il programma legge troppo poco, i dati vecchi di quel teatro restano.
-import json, re, sys, subprocess, tempfile, datetime as dt, urllib.request
+import json, re, sys, subprocess, tempfile, collections, datetime as dt, urllib.request, urllib.parse
 from html.parser import HTMLParser
 
 FILE = "events-data.json"
@@ -85,7 +85,7 @@ def links(html):
     p = Link(); p.feed(html); return p.out
 
 def ev(a, t, v, u, s, e, c, k, p="", src=""):
-    return {"a": a, "t": t, "v": v, "u": u, "s": s, "e": e or s, "c": "concerto" if c == "c" else "teatro", "k": k, "p": p, "d": fmt(s, e or s), "src": src}
+    return {"a": a, "t": t, "v": v, "u": u, "s": s, "e": e or s, "c": "concerto" if c == "c" else "teatro", "k": k, "p": p, "d": fmt(s, e or s), "src": src, "img": ""}
 
 def bel(t):  # TITOLO IN MAIUSCOLO -> Titolo
     pic = {"di", "e", "i", "il", "la", "le", "dei", "del", "in", "a", "da", "ed"}
@@ -257,6 +257,34 @@ def src_politeama():
 FONTI = [("politeama", src_politeama, "sostituisci"), ("nazionale", src_nazionale, "sostituisci"),
          ("carlofelice", src_carlofelice, "sostituisci"), ("gog", src_gog, "sostituisci"), ("tosse", src_tosse, "unisci")]
 
+def og_image(html, url):
+    """Immagine di anteprima (og:image) che il teatro stesso indica per lo spettacolo."""
+    for m in re.finditer(r"<meta\b[^>]*>", html, re.I):
+        if re.search(r'(?:property|name)=["\']og:image["\']', m.group(0), re.I):
+            c = re.search(r'content=["\']([^"\']+)["\']', m.group(0), re.I)
+            if c: return urllib.parse.urljoin(url, c.group(1).replace("&amp;", "&"))
+    return ""
+
+def locandine(ev_all, prev, rete=True):
+    vecchie = {(e["a"], e["s"]): e["img"] for e in prev if e.get("img")}
+    for e in ev_all:
+        if not e.get("img"): e["img"] = vecchie.get((e["a"], e["s"]), "")
+    if rete:
+        n = 0
+        for e in ev_all:
+            if e["src"] in ("nazionale", "tosse") and not e["img"] and e["u"].startswith("http") and e["u"].count("/") > 3 and n < 150:
+                n += 1
+                try: e["img"] = og_image(get(e["u"]), e["u"])
+                except Exception: pass
+    cont = collections.Counter(e["img"] for e in ev_all if e["img"])
+    for e in ev_all:                      # stessa immagine su piu' di 3 eventi = logo generico, la scarto
+        if e["img"] and cont[e["img"]] > 3: e["img"] = ""
+    try: man = json.load(open("locandine.json", encoding="utf-8"))
+    except Exception: man = {}
+    for e in ev_all:                      # locandine scritte a mano: vincono sempre
+        if isinstance(man.get(e["a"]), str) and man[e["a"]].startswith("http"): e["img"] = man[e["a"]]
+    print("Locandine presenti:", sum(1 for e in ev_all if e["img"]), "su", len(ev_all))
+
 def indovina_src(e):
     if e.get("src"): return e["src"]
     if e["v"] == "Politeama Genovese": return "politeama"
@@ -288,6 +316,7 @@ def main():
                 chiavi = {(e["a"], e["s"]) for e in nuovi}
                 ev_all = [e for e in ev_all if not (e["src"] == nome and (e["a"], e["s"]) in chiavi)] + nuovi
             fonti[nome] = {"ok": True, "n": len(nuovi), "data": oggi}; print(f"[{nome}] ok: {len(nuovi)} eventi")
+    locandine(ev_all, prev, rete=not solo_norm)
     limite = (TODAY - dt.timedelta(days=2)).isoformat()
     ev_all = sorted([e for e in ev_all if e["e"] >= limite], key=lambda e: (e["s"], e["a"]))
     agg = j.get("updated", oggi) if isinstance(j, dict) else oggi
