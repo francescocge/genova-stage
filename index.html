@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- Genova Stage - versione v1.7 (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genova Stage v1.7</title>
+<style>
+:root{--bg:#0e1a2b;--card:#16263b;--card2:#1d3150;--gold:#d4af37;--gold2:#f0dc8c;--txt:#f3f5f8;--dim:#9fb0c6;--line:#2a3f5e}
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body{background:var(--bg);color:var(--txt);min-height:100vh;font-size:16px}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,#14243a,var(--bg));padding:18px 14px 12px;border-bottom:1px solid var(--line);text-align:center}
+h1{font-size:1.6rem;color:var(--gold);letter-spacing:1px;text-transform:uppercase}
+.ver{font-size:.75rem;color:var(--dim);margin:2px 0 12px}
+.ctl{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+input,select{width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:#fff;font-size:1rem;outline:none}
+input:focus,select:focus{border-color:var(--gold)}
+.tabs{display:flex;gap:8px}
+.tab{flex:1;padding:12px 6px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--dim);font-size:.95rem;font-weight:600;cursor:pointer}
+.tab.on{background:linear-gradient(180deg,#e6c758,#b8932a);color:#1a1405;border-color:var(--gold);box-shadow:0 4px 0 #7d6417}
+.count{font-size:.8rem;color:var(--dim);padding:12px 16px 0;max-width:1100px;margin:0 auto}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;padding:14px;max-width:1100px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.top{display:flex;gap:14px;padding:16px;align-items:center;background:linear-gradient(135deg,var(--card2),var(--card))}
+.dt{min-width:64px;text-align:center;border:1px solid var(--gold);border-radius:14px;padding:8px 4px;background:#0e1a2b}
+.dt b{display:block;font-size:1.7rem;color:var(--gold2);line-height:1}
+.dt span{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:10px;background:var(--gold);color:#1a1405;margin-bottom:6px}
+.tag.c{background:#7fb2ff;color:#06182e}
+.art{font-size:1.1rem;font-weight:700;line-height:1.25}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ti{color:var(--gold2);font-size:.92rem}
+.ve{color:var(--dim);font-size:.88rem}
+.pr{font-size:.9rem;font-weight:600}
+.btn{margin-top:auto;display:block;width:100%;padding:13px;border-radius:14px;border:none;font-size:1rem;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;color:#1a1405;background:linear-gradient(180deg,#e6c758,#b8932a);box-shadow:0 4px 0 #7d6417}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #7d6417}
+.btn.s{background:linear-gradient(180deg,#2c4468,#1f3252);color:var(--gold2);box-shadow:0 4px 0 #101c30;margin-top:10px}
+.poster{height:230px;background:#0e1a2b}.poster img{width:100%;height:100%;object-fit:cover;display:block}.mposter{margin:-22px -22px 16px;border-radius:20px 20px 0 0;overflow:hidden;max-height:320px}.mposter img{width:100%;display:block;object-fit:cover}.x{z-index:2;text-shadow:0 0 6px #000}
+.empty{grid-column:1/-1;text-align:center;color:var(--dim);padding:40px 10px}
+.modal{display:none;position:fixed;inset:0;background:rgba(5,10,20,.85);z-index:100;padding:16px;overflow-y:auto}
+.mc{background:var(--card);border:1px solid var(--gold);border-radius:20px;max-width:500px;margin:24px auto;padding:22px;position:relative}
+.x{position:absolute;top:10px;right:14px;font-size:1.8rem;color:var(--dim);cursor:pointer;background:none;border:none}
+.pb{background:var(--bg);border-left:4px solid var(--gold);padding:12px;border-radius:8px;margin:14px 0;font-size:.95rem}
+.pb small{display:block;color:var(--dim);margin-top:4px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Genova Stage</h1>
+  <div class="ver" id="ver"></div>
+  <div class="ctl">
+    <input id="q" type="search" placeholder="Cerca artista, spettacolo o teatro...">
+    <div class="tabs" id="tabs">
+      <button class="tab on" data-c="all">Tutti</button>
+      <button class="tab" data-c="teatro">Teatro</button>
+      <button class="tab" data-c="concerto">Concerti</button>
+    </div>
+    <select id="venue"><option value="all">Tutti i luoghi</option></select>
+  </div>
+</header>
+<div class="count" id="count"></div>
+<main id="grid"></main>
+
+<div class="modal" id="modal"><div class="mc">
+  <button class="x" id="close" aria-label="Chiudi">&times;</button>
+  <div id="mPoster"></div>
+  <div class="tag" id="mTag"></div>
+  <h2 id="mArt" style="color:var(--gold);margin-bottom:4px"></h2>
+  <h3 id="mTit" style="font-size:1rem;margin-bottom:8px"></h3>
+  <p id="mVen" style="color:var(--dim);margin-bottom:6px"></p>
+  <p id="mDat" style="color:var(--gold2);font-weight:700"></p>
+  <div class="pb"><span id="mPre"></span><small>Verifica prezzo e date sul sito ufficiale</small></div>
+  <p id="mDes" style="line-height:1.5;margin-bottom:18px"></p>
+  <a id="mLink" class="btn" target="_blank" rel="noopener">Biglietti sul sito ufficiale</a>
+  <button class="btn s" id="ics">Salva nel calendario (.ics)</button>
+</div></div>
+
+<script>
+// DATI: per aggiungere un evento copia un blocco e cambia i valori.
+// img (facoltativo) = locandina: indirizzo web oppure immagine incorporata (data:image/jpeg;base64,...). Se manca o non carica, si vede il blocco data.
+// c = "teatro" oppure "concerto"; s/e = data inizio/fine AAAA-MM-GG; k = etichetta
+const EVENTS=[];
+// Formato riga: Nome|Sottotitolo|Luogo|Inizio|Fine(vuoto=stesso giorno)|t=teatro/c=concerto|Etichetta|Prezzo(facoltativo)
+// Politeama: programma ufficiale 6/11/2026 (prezzi = minimo e massimo dei posti). Altri teatri: siti ufficiali e portali biglietti, 07/11/2026. Verifica sempre date e prezzi.
+const V={V:["Teatro Verdi","https://www.ticketone.it/city/genova-224/concerti-55/"],S:["Palateknoship","https://www.ticketone.it/city/genova-224/concerti-55/"],P:["Politeama Genovese","https://www.politeamagenovese.it"],C:["Teatro Carlo Felice","https://www.carlofelice.it"],K:["Teatro Sociale di Camogli","https://www.carlofelice.it"],N:["Teatro Nazionale di Genova","https://www.teatronazionalegenova.it"],T:["Teatro della Tosse","https://teatrodellatosse.it"],G:["Teatro Govi","https://www.teatro.it/spettacoli/genova/govi/biglietti"],A:["Arena del Mare Porto Antico","https://www.ticketone.it/city/genova-224/venue/arena-mare-area-porto-antico-16501/"]};
+const MN=["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"];
+const pf=p=>{if(!p||!/^[\d,\/ ]+$/.test(p))return p;const n=p.split("/").map(x=>x.trim()).filter(Boolean),v=n.map(x=>parseFloat(x.replace(",",".")));const lo=n[v.indexOf(Math.min(...v))],hi=n[v.indexOf(Math.max(...v))];return lo===hi?lo+" €":"Da "+lo+" € a "+hi+" €"};
+const fmt=(s,e)=>{const a=s.split("-").map(Number),b=e.split("-").map(Number);
+  if(s===e)return a[2]+" "+MN[a[1]-1]+" "+a[0];
+  if(a[0]===b[0]&&a[1]===b[1])return a[2]+" - "+b[2]+" "+MN[a[1]-1]+" "+a[0];
+  if(a[0]===b[0])return a[2]+" "+MN[a[1]-1]+" - "+b[2]+" "+MN[b[1]-1]+" "+a[0];
+  return a[2]+" "+MN[a[1]-1]+" "+a[0]+" - "+b[2]+" "+MN[b[1]-1]+" "+b[0]};
+`Luca Bizzarri|Non hanno un amico dubbio|P|2026-11-06|2026-11-07|t|Comicità|31/25
+Ambra Angiolini|La misteriosa scomparsa di W|P|2026-11-10|2026-11-11|t|Prosa|37/31
+Marco Goldin|Monet. Una vita a colori|P|2026-11-12||t|Spettacolo|43,70/34,50
+Marco Paolini|Bestiario idrico|P|2026-11-13||t|Racconto|34/31/29
+Marco Paolini|Dov'è il Po?|P|2026-11-14||t|Racconto|34/31/29
+Arisa|Live Tour|P|2026-11-17||c|Concerto|69/63,25/51,75
+Mario Calabresi|Anni Settanta. Terrore e diritti|P|2026-11-18||t|Racconto|37/31
+Indovina chi viene a cena|Con Cesare Bocci e Vittoria Belvedere|P|2026-11-20|2026-11-21|t|Commedia|43,70/38
+Geppi Cucciari|Perfetta|P|2026-11-23|2026-11-24|t|Comicità|38/32
+Pirati dei Caruggi|Sert du Soleil|P|2026-11-27|2026-11-29|t|Comicità|37/31
+Stefano Rapone|Comico dai ruoli mai principali|P|2026-11-30||t|Comicità|36,80/31,05/27,60
+La Cena dei Cretini||P|2026-12-01|2026-12-03|t|Commedia|30
+Katia Follesa|No vabbè mi adoro|P|2026-12-04|2026-12-05|t|Comicità|53/46
+Soweto Gospel Choir||P|2026-12-06||c|Concerto|56,35/48,30/34,50
+Genesis|One Night with the Orchestra|P|2026-12-10||c|Concerto|79/69/59
+Fratello Sole, Sorella Luna||P|2026-12-11|2026-12-12|t|Musical|46/40/34,50
+Alessandro Cattelan|Benvenuto nell'Ai!|P|2026-12-15||t|Comicità|78,20/63,25/51,75
+Assassinio sull'Orient Express|Con Claudio Gregori|P|2026-12-17|2026-12-19|t|Prosa|45/38
+A Christmas Carol|Musical|P|2026-12-21|2026-12-22|t|Musical|49/39/29
+Harlem Gospel Choir|Whitney & Tina|P|2026-12-23||c|Concerto|40/34,50
+Bruciabaracche||P|2026-12-26|2026-12-27|t|Comicità|37/31
+Maurizio Lastrico|Capodanno (ore 19:30 e 22:30)|P|2026-12-31||t|Comicità|55/46/61/51
+Maurizio Lastrico||P|2027-01-02|2027-01-05|t|Comicità|40/34,50
+Massimo Ranieri|Tutti i sogni ancora in volo|P|2027-01-09||c|Concerto|74,50/63/51,50
+Massimo Recalcati|Genitori oggi|P|2027-01-11||t|Racconto|40
+Marta e Gianluca|Io e Gianlu|P|2027-01-15|2027-01-16|t|Comicità|39/32
+Aggiungi un posto a tavola|Con Giovanni Scifoni|P|2027-01-22|2027-01-24|t|Musical|63/51/40
+Fabio Concato|Altro di me|P|2027-01-26||c|Concerto|50/39/32/29
+Arianna Porcelli Safonov|Odiario|P|2027-01-27||t|Comicità|31/25
+Stefania Andreoli|La mente in scena|P|2027-01-29||t|Racconto|46/40/35
+Maccio Capatonda|Spettacolo teatrale|P|2027-02-09||t|Comicità|55/46/40
+Roberto Saviano|Quel che resta di me|P|2027-02-11||t|Racconto|45/40
+Paolo Kessisoglu|Sfidati di me|P|2027-02-13||t|Comicità|34,50/29
+Eleazaro Rossi|Kamikaze|P|2027-02-15||t|Comicità|41,90/36,90/29,90
+Antonio Ornano|Il bar sotto il mare|P|2027-02-18|2027-02-20|t|Comicità|37/31
+Slava's SnowShow||P|2027-02-24|2027-02-28|t|Spettacolo|55/50,50/46/40/34,50
+Francesco Piccolo|Cosa sono le nuvole. Gli ultimi anni di Totò|P|2027-03-02||t|Racconto|34,50/29
+Gioele Dix|Arrivato a questo punto|P|2027-03-03||t|Comicità|34,50/29
+Federico Buffa|Otto infinito|P|2027-03-04||t|Racconto|43,70/34,50
+Pink Floyd Legend|The Dark Side of the Moon|P|2027-03-05|2027-03-06|c|Concerto|50/42/35
+Elio|La rivalutazione della tristezza|P|2027-03-09||c|Concerto|40/34,50
+Frida Opera Musical||P|2027-03-12|2027-03-14|t|Musical|69/57,50/46
+Virginia Raffaele|Bancàl|P|2027-03-16|2027-03-20|t|Comicità|60/49,50/38
+Voglio vederti danzare|Omaggio a Franco Battiato|P|2027-03-22||c|Concerto|50/42/35
+Daniele Tinti|Pesche dure|P|2027-03-23||t|Comicità|34,50/28,75/26,45
+Paolo Rossi e Bebo Storti|L'opera del delinquente|P|2027-03-24||t|Comicità|34,50/29
+PanPers|Terapia di coppia|P|2027-03-31||t|Comicità|34,50/29
+Andrea Pennacchi|Shakespeare and me|P|2027-04-03||t|Racconto|34,50/29
+Eleazaro Rossi|Kamikaze (nuova data)|P|2027-04-05||t|Comicità|41,90/36,90/29,90
+Aldo Cazzullo|Il genio italiano|P|2027-04-06||t|Racconto|40/34,50
+Il lago dei cigni|Balletto di Milano|P|2027-04-08||t|Danza|50/39
+Oblivion|Win for life|P|2027-04-09|2027-04-10|t|Musical|34,50/29
+Giovanni Allevi|Piano Solo Tour 2027|P|2027-04-14||c|Concerto|59,50/48/36,50
+Giordana Angi|Piano piano Live Tour|P|2027-04-20||c|Concerto|40/34,50
+Angelo Duro|Chiedo scusa a tutti|P|2027-04-21|2027-04-22|t|Comicità|55/45/40
+Osteria Giacobazzi||P|2027-04-27|2027-04-28|t|Comicità|47/42
+Stefano Nazzi|Indagini Live 2027|P|2027-04-29||t|Racconto|44,80/41,40/35,60
+Gianrico Carofiglio|Il mistero della stupidità|P|2027-05-05||t|Racconto|42,50/37
+Alessandro Bergonzoni|Arrivano i Dunque|P|2027-05-06||t|Comicità|34,50/29
+Dire Straits Reload||P|2027-05-11||c|Concerto|49/44/38
+Il ragazzo dai pantaloni rosa|Il Musical|P|2027-05-14|2027-05-15|t|Musical|55/48/39,50
+Le nostre donne|Bizzarri, Paci, Zavatteri|P|2027-05-18|2027-05-19|t|Commedia|37/31
+Notte prima degli esami||P|2027-05-20|2027-05-22|t|Musical|45/38
+I concerti a cinque di Vivaldi|Primo foyer|C|2026-11-08||c|Concerto|
+Wanderer Trio|Stagione GOG|C|2026-11-16||c|Concerto|
+I Capuleti e i Montecchi|Bellini|C|2026-11-20|2026-11-27|t|Opera|
+Fauré Quartet|Stagione GOG|C|2026-11-23||c|Concerto|
+Coez|From The Rooftop|C|2026-11-26||c|Concerto|
+Mario Biondi|Tour 2026|C|2026-11-28||c|Concerto|
+Lucas Debargue|Stagione GOG|C|2026-11-30||c|Concerto|
+Lo Schiaccianoci|Astana Opera|C|2026-12-03|2026-12-06|t|Danza|
+Giselle|Astana Opera|C|2026-12-11|2026-12-13|t|Danza|
+Merry Christmas|Coro di voci bianche|C|2026-12-20||c|Concerto|
+Alexandra Dovgan|Stagione GOG|C|2026-12-21||c|Concerto|
+Concerto di Natale||C|2026-12-23||c|Concerto|
+Gran Concerto di Capodanno||C|2027-01-01||c|Concerto|
+Il lago dei cigni|Arena di Verona|C|2027-01-08|2027-01-10|t|Danza|
+Ettore Pagano e Maximilian Kromer|Stagione GOG|C|2027-01-18||c|Concerto|
+Pagliacci|Leoncavallo|C|2027-01-22|2027-01-31|t|Opera|
+Nelson Goerner|Stagione GOG|C|2027-01-25||c|Concerto|
+Beethoven 200 - 1||C|2027-01-28||c|Concerto|
+Ilya Gringolts e Peter Laul|Stagione GOG|C|2027-02-01||c|Concerto|
+Deledda|Concerto sinfonico|C|2027-02-02||c|Concerto|
+Günther Groissböck e Julius Drake|Stagione GOG|C|2027-02-08||c|Concerto|
+L'italiana in Algeri|Rossini|C|2027-02-19|2027-02-28|t|Opera|
+András Schiff|Stagione GOG|C|2027-02-22||c|Concerto|
+Beethoven 200 - 2||C|2027-02-25||c|Concerto|
+Beethoven 200 - 3||C|2027-03-03||c|Concerto|
+Turandot|Puccini|C|2027-03-19|2027-03-25|t|Opera|
+Alexander Gadjiev|Stagione GOG|C|2027-03-22||c|Concerto|
+Sergio Bernal Dance Company||C|2027-04-02|2027-04-04|t|Danza|
+Clayton Stephenson|Stagione GOG|C|2027-04-12||c|Concerto|
+Evgenij Onegin|Čajkovskij|C|2027-04-16|2027-04-21|t|Opera|
+VOCES8|Stagione GOG|C|2027-04-19||c|Concerto|
+Alinde Quintet|Stagione GOG|C|2027-04-26||c|Concerto|
+Verdi Requiem||C|2027-04-29||c|Concerto|
+Grigory Sokolov|Stagione GOG|C|2027-05-03||c|Concerto|
+Ilya Gringolts e Peter Laul|Stagione GOG|C|2027-05-10||c|Concerto|
+Nabucco|Verdi|C|2027-05-21|2027-05-30|t|Opera|
+Brooklyn Rider|Stagione GOG|C|2027-05-24||c|Concerto|
+Rosso Ferrari||C|2027-05-27||c|Concerto|
+Beethoven 200 - 4||C|2027-06-04||c|Concerto|
+Beethoven 200 - 5||C|2027-06-10||c|Concerto|
+The Phantom of the Opera||C|2027-06-17|2027-06-20|t|Musical|
+Orizzonti romantici|Concerto a Camogli|K|2026-11-10||c|Concerto|
+Max Gazzè|L'ornamento delle cose secondarie|V|2026-11-12|2026-11-14|c|Concerto|
+Shiva||S|2026-11-19||c|Concerto|
+Suona Buena Vista Social Club|Temporary Band|G|2026-11-18||c|Concerto|
+Peppe Iodice|Ho visto Maradona · Teatro Ivo Chiesa|N|2026-11-07||t|Comicità|
+Back to Hawkins|Live show · Teatro Ivo Chiesa|N|2026-11-27||t|Spettacolo|
+Il donatore|Sala Dino Campana|T|2026-11-03|2026-11-08|t|Teatro|
+AlJazzeera|Jazz, La Claque|T|2026-11-07||c|Jazz|
+Kaguya-Hime|Per famiglie|T|2026-11-08|2026-11-09|t|Famiglie|
+What the body does not remember|Danza, Wim Vandekeybus|T|2026-11-12||t|Danza|
+Il grande inganno|Danza|T|2026-11-14||t|Danza|
+Advienne que pourra||T|2026-11-20||t|Teatro|
+L'occhio del lupo|Daniel Pennac|T|2026-11-26|2026-11-29|t|Teatro|
+Hourvari|Circo a Voltri|T|2026-12-02|2026-12-04|t|Circo|
+Mio padre è Sylvester Stallone|Sala Mercato|N|2026-11-03|2026-11-08|t|Teatro|
+Prima del Temporale|Teatro Modena|N|2026-11-05|2026-11-08|t|Teatro|
+Nasi rossi|Foyer Teatro Modena|N|2026-11-07||t|Teatro|
+Starman|Teatro Modena|N|2026-11-10|2026-11-15|t|Teatro|
+La sera della prima · Monica Guerritore|Teatro Duse|N|2026-11-11||t|Teatro|
+Madri|Teatro Duse|N|2026-11-12|2026-11-13|t|Teatro|
+La diva del Bataclan|Teatro Duse|N|2026-11-14||t|Teatro|
+Ingeborg und ich! ... e la civetta|Sala Mercato|N|2026-11-17||t|Teatro|
+Accabadora|Teatro Duse|N|2026-11-17||t|Teatro|
+Mi manca Van Gogh|Sala Mercato|N|2026-11-18||t|Teatro|
+Lu santo Jullare Francesco|Teatro Modena|N|2026-11-18|2026-11-22|t|Teatro|
+People, Places & Things|Teatro Ivo Chiesa|N|2026-11-19|2026-11-22|t|Teatro|
+Mare di ruggine|Sala Mercato|N|2026-11-20|2026-11-22|t|Teatro|
+Contro il sole|Teatro Duse|N|2026-11-21||t|Teatro|
+Scherzo, malgrado tutto|Sala Mercato|N|2026-11-24|2026-11-25|t|Teatro|
+L'alba dopo la fine della Storia|Teatro Ivo Chiesa|N|2026-11-24|2026-11-25|t|Teatro|
+Crave|Sala Mercato|N|2026-11-26||t|Teatro|
+Emigranti|Teatro Modena|N|2026-11-27|2026-11-29|t|Teatro|
+Morte accidentale di un anarchico|Teatro Ivo Chiesa|N|2026-12-01|2026-12-03|t|Teatro|
+Congiura|Teatro Modena|N|2026-12-02|2026-12-03|t|Teatro|
+Equus|Teatro Duse|N|2026-12-04|2026-12-12|t|Teatro|
+Solitarium|Teatro Modena|N|2026-12-05||t|Teatro|
+Vizita|Teatro Modena|N|2026-12-11|2026-12-12|t|Teatro|
+Lo Zar · Stefano Massini|Teatro Ivo Chiesa|N|2026-12-11|2026-12-13|t|Teatro|
+100 Miles to go|Teatro Modena|N|2026-12-13||t|Teatro|
+Il berretto a sonagli · Silvio Orlando|Teatro Ivo Chiesa|N|2026-12-17|2026-12-20|t|Teatro|
+Lento e violento|Sala Mercato|N|2026-12-28||t|Teatro|
+La strana coppia|Teatro Ivo Chiesa|N|2026-12-29|2027-01-06|t|Teatro|
+Sweet Molotov|Sala Mercato|N|2026-12-30||t|Teatro|
+Le Dieu du carnage|Teatro Duse|N|2026-12-30|2027-01-06|t|Teatro|
+Oscar|Teatro Ivo Chiesa|N|2027-01-07|2027-01-10|t|Teatro|
+POeSIA (e l'invisibile)|Teatro Modena|N|2027-01-09||t|Teatro|
+Una delle ultime sere di Carnovale|Teatro Ivo Chiesa|N|2027-01-13|2027-01-17|t|Teatro|
+Peace on earth|Teatro Modena|N|2027-01-17||t|Teatro|
+L'ultimo nastro di Krapp / Press conference|Teatro Modena|N|2027-01-20|2027-01-24|t|Teatro|
+Erano tutti miei figli|Teatro Ivo Chiesa|N|2027-01-22|2027-01-24|t|Teatro|
+Il giardiniere dei sogni|Teatro Duse|N|2027-01-23||t|Teatro|
+Ahi Maria!|Teatro Duse|N|2027-01-28|2027-01-31|t|Teatro|
+Non si sa come|Teatro Ivo Chiesa|N|2027-01-28|2027-01-31|t|Teatro|
+Platonov|Teatro Ivo Chiesa|N|2027-02-03|2027-02-06|t|Teatro|
+Quartett|Teatro Duse|N|2027-02-04|2027-02-07|t|Teatro|
+Millemila baci|Sala Mercato|N|2027-02-06||t|Teatro|
+Il medico dei maiali|Teatro Ivo Chiesa|N|2027-02-09|2027-02-11|t|Teatro|
+Poveri Cristi|Teatro Modena|N|2027-02-12|2027-02-13|t|Teatro|
+La guerra com'è|Teatro Ivo Chiesa|N|2027-02-16|2027-02-17|t|Teatro|
+Edipus|Teatro Duse|N|2027-02-18|2027-02-21|t|Teatro|
+La reginetta di Leenane|Teatro Ivo Chiesa|N|2027-02-18|2027-02-21|t|Teatro|
+A come Alice|Sala Mercato|N|2027-02-20||t|Teatro|
+Brasil!|Teatro Modena|N|2027-02-21||t|Teatro|
+Fedra|Teatro Duse|N|2027-02-23|2027-02-28|t|Teatro|
+Quinto: non uccidere|Teatro Modena|N|2027-02-25|2027-02-28|t|Teatro|
+M/T Moby Prince 3.0|Sala Mercato|N|2027-03-02|2027-03-03|t|Teatro|
+Dopo la prova|Teatro Modena|N|2027-03-04|2027-03-07|t|Teatro|
+I due gemelli veneziani|Teatro Ivo Chiesa|N|2027-03-04|2027-03-21|t|Teatro|
+Lettere a un giovane poeta|Sala Mercato|N|2027-03-10|2027-03-12|t|Teatro|
+Sconcerto d'amore|Sala Mercato|N|2027-03-13||t|Teatro|
+Too Late|Teatro Duse|N|2027-03-13|2027-03-14|t|Teatro|
+Nadir|Teatro Modena|N|2027-03-14||t|Teatro|
+Gran Bazar|Sala Mercato|N|2027-03-18|2027-03-21|t|Teatro|
+Ma a che serve la luce? / Le ceneri di Gramsci|Sala Mercato|N|2027-03-31|2027-04-01|t|Teatro|
+Preghiera|Teatro Ivo Chiesa|N|2027-04-02||t|Teatro|
+Agitazione|Teatro Duse|N|2027-04-03|2027-04-10|t|Teatro|
+Romeo & Juliet|Teatro Modena|N|2027-04-07|2027-04-09|t|Teatro|
+Scheda bianca|Teatro Ivo Chiesa|N|2027-04-08|2027-04-11|t|Teatro|
+In...segnami il silenzio|Sala Mercato|N|2027-04-10||t|Teatro|
+Le baccanti|Teatro Ivo Chiesa|N|2027-04-15|2027-04-18|t|Teatro|
+L'ultima domenica di agosto|Teatro Modena|N|2027-04-15|2027-04-18|t|Teatro|
+Fagioli|Parco di Pegli|N|2027-04-17||t|Teatro|
+Amleto|Teatro Ivo Chiesa|N|2027-04-21|2027-04-25|t|Teatro|
+Il marabù|Teatro Duse|N|2027-04-28|2027-05-09|t|Teatro|
+Canto alla balena bianca|Teatro Ivo Chiesa|N|2027-05-05||t|Teatro|
+Tedesca|Sala Mercato|N|2027-05-06|2027-05-08|t|Teatro|
+Barbare furie|Teatro Modena|N|2027-05-11|2027-05-16|t|Teatro|
+Acoustic Night 27|Teatro Ivo Chiesa|N|2027-05-20|2027-05-22|c|Concerto|
+CMR Big Band|Teatro Modena|N|2027-05-22||c|Concerto|
+Kento|La cella di fronte|G|2026-11-14||t|Spettacolo|
+Margherita Hack|Una donna piena di cielo|G|2026-11-28||t|Teatro|
+The Jury Experience|Spettacolo interattivo, più repliche|G|2026-11-20|2027-01-29|t|Spettacolo|Da 23,00 €
+Candlelight: Disney Canzoni d'Amore|Più date|G|2026-12-18|2027-01-22|c|Concerto|Da 23,00 €
+Candlelight: Tributo a Michael Jackson|Più date|G|2026-12-18|2027-02-26|c|Concerto|Da 23,00 €
+Candlelight: Il meglio di Ludovico Einaudi||G|2027-01-15||c|Concerto|Da 23,00 €
+Candlelight: I classici del rock||G|2027-01-22||c|Concerto|Da 23,00 €
+Temporary Band|Suona Lucio Battisti|G|2027-02-05||c|Concerto|
+Il Matricomio|Non ti prometto niente|G|2027-02-13||t|Comicità|
+Fire of Georgia|Royal National Ballet of Georgia|V|2026-12-11||t|Danza|
+Claudio Baglioni|La vita è adesso|A|2027-07-07||c|Concerto|Da 75,00 € a 150,00 €`.split("\n").forEach(r=>{const f=r.split("|");const e={a:f[0],t:f[1],v:V[f[2]][0],u:V[f[2]][1],s:f[3],e:f[4]||f[3],c:f[5]==="c"?"concerto":"teatro",k:f[6],p:pf(f[7]||"")};e.d=fmt(e.s,e.e);EVENTS.push(e)});
+const MESI=["GEN","FEB","MAR","APR","MAG","GIU","LUG","AGO","SET","OTT","NOV","DIC"];
+const $=id=>document.getElementById(id);
+let cat="all",sel=null;
+const now=new Date(),today=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+EVENTS.sort((x,y)=>x.s<y.s?-1:1);
+[...new Set(EVENTS.map(e=>e.v))].sort().forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;$("venue").appendChild(o)});
+
+function render(){
+  const q=$("q").value.toLowerCase().trim(),vn=$("venue").value;
+  const list=EVENTS.map((e,i)=>({e,i})).filter(({e})=>
+    e.e>=today && (cat==="all"||e.c===cat) && (vn==="all"||e.v===vn) &&
+    (e.a+" "+e.t+" "+e.v).toLowerCase().includes(q));
+  $("count").textContent=list.length+(list.length===1?" evento":" eventi");
+  $("grid").innerHTML=list.length?list.map(({e,i})=>{
+    const dd=e.s.split("-");
+    return `<div class="card">${e.img?`<div class="poster"><img src="${esc(e.img)}" alt="Locandina ${esc(e.a)}" loading="lazy" onerror="this.parentNode.remove()"></div>`:""}<div class="top"><div class="dt"><b>${+dd[2]}</b><span>${MESI[+dd[1]-1]}</span></div>
+    <div><div class="tag ${e.c==="concerto"?"c":""}">${esc(e.k)}</div><div class="art">${esc(e.a)}</div></div></div>
+    <div class="body">${e.t?`<div class="ti">${esc(e.t)}</div>`:""}<div class="ve">📍 ${esc(e.v)}</div>
+    <div class="ve">${esc(e.d)}</div>${e.p?`<div class="pr">${esc(e.p)}</div>`:""}
+    <button class="btn" style="margin-top:10px" data-i="${i}">Info &amp; Prezzi</button></div></div>`}).join("")
+    :'<div class="empty">Nessun evento trovato. Prova a cambiare ricerca o filtro.</div>';
+}
+function openM(i){
+  sel=EVENTS[i];
+  $("mPoster").innerHTML=sel.img?`<div class="mposter"><img src="${esc(sel.img)}" alt="Locandina" onerror="this.parentNode.remove()"></div>`:"";
+  $("mTag").textContent=sel.k;$("mArt").textContent=sel.a;$("mTit").textContent=sel.t;
+  $("mVen").textContent="📍 "+sel.v+", Genova";$("mDat").textContent=sel.d;
+  $("mPre").textContent=sel.p?"Prezzo: "+sel.p:"Prezzo: vedi sito ufficiale";$("mDes").textContent=sel.x||"";$("mLink").href=sel.u;
+  $("modal").style.display="block";
+}
+function ics(){
+  if(!sel)return;
+  const f=s=>s.replace(/-/g,"");
+  const end=new Date(sel.e+"T00:00:00");end.setDate(end.getDate()+1);
+  const en=end.getFullYear()+String(end.getMonth()+1).padStart(2,"0")+String(end.getDate()).padStart(2,"0");
+  const t=`BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Genova Stage//IT\r\nBEGIN:VEVENT\r\nUID:${f(sel.s)}-${sel.a.replace(/\W/g,"")}@genovastage\r\nDTSTAMP:${new Date().toISOString().replace(/[-:]/g,"").split(".")[0]}Z\r\nDTSTART;VALUE=DATE:${f(sel.s)}\r\nDTEND;VALUE=DATE:${en}\r\nSUMMARY:${sel.a} - ${sel.t}\r\nLOCATION:${sel.v}\\, Genova\r\nEND:VEVENT\r\nEND:VCALENDAR`;
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([t],{type:"text/calendar;charset=utf-8"}));
+  a.download=sel.a.replace(/\W+/g,"_")+".ics";
+  document.body.appendChild(a);a.click();a.remove();
+}
+$("q").addEventListener("input",render);
+$("venue").addEventListener("change",render);
+$("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(!b)return;
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));b.classList.add("on");cat=b.dataset.c;render()});
+$("grid").addEventListener("click",e=>{const b=e.target.closest("[data-i]");if(b)openM(+b.dataset.i)});
+$("close").onclick=()=>$("modal").style.display="none";
+$("modal").addEventListener("click",e=>{if(e.target.id==="modal")$("modal").style.display="none"});
+$("ics").onclick=ics;
+let UPDATED="2026-11-07";const UPDATE_URL="events-data.json";
+function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri & Concerti · v1.7 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
+setVer();render();
+// AGGIORNAMENTO ONLINE: a ogni apertura la pagina scarica events-data.json (nella stessa cartella). Se non c'è internet o il file manca, usa i dati incorporati qui sopra.
+(async()=>{try{const x=await fetch(UPDATE_URL,{cache:"no-store"});if(!x.ok)return;const j=await x.json(),L=Array.isArray(j)?j:j.events;if(!Array.isArray(L)||!L.length)return;EVENTS.length=0;L.forEach(e=>{e.e=e.e||e.s;e.d=e.d||fmt(e.s,e.e);EVENTS.push(e)});EVENTS.sort((a,b)=>a.s<b.s?-1:1);if(j.updated)UPDATED=j.updated;setVer();render()}catch(e){}})();
+</script>
+</body>
+</html>
