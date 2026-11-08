@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-# aggiorna_eventi.py v1.1 (aggiunge le locandine) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
+# aggiorna_eventi.py v1.3 (link diretti alle pagine degli spettacoli + locandine) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
 # Regola di sicurezza: se un sito cambia e il programma legge troppo poco, i dati vecchi di quel teatro restano.
-import json, re, sys, subprocess, tempfile, collections, datetime as dt, urllib.request, urllib.parse
+import os, unicodedata, json, re, sys, subprocess, tempfile, collections, datetime as dt, urllib.request, urllib.parse
 from html.parser import HTMLParser
 
 FILE = "events-data.json"
@@ -265,6 +265,10 @@ def og_image(html, url):
             if c: return urllib.parse.urljoin(url, c.group(1).replace("&amp;", "&"))
     return ""
 
+def slug(nome):
+    n = unicodedata.normalize("NFKD", nome).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "-", n).strip("-")
+
 def locandine(ev_all, prev, rete=True):
     vecchie = {(e["a"], e["s"]): e["img"] for e in prev if e.get("img")}
     for e in ev_all:
@@ -279,11 +283,42 @@ def locandine(ev_all, prev, rete=True):
     cont = collections.Counter(e["img"] for e in ev_all if e["img"])
     for e in ev_all:                      # stessa immagine su piu' di 3 eventi = logo generico, la scarto
         if e["img"] and cont[e["img"]] > 3: e["img"] = ""
+    for e in ev_all:                      # file caricati nella cartella locandine/ (nome = nome evento con i trattini)
+        for ext in ("jpg", "jpeg", "png", "webp"):
+            f = f"locandine/{slug(e['a'])}.{ext}"
+            if os.path.exists(f): e["img"] = f; break
     try: man = json.load(open("locandine.json", encoding="utf-8"))
     except Exception: man = {}
     for e in ev_all:                      # locandine scritte a mano: vincono sempre
-        if isinstance(man.get(e["a"]), str) and man[e["a"]].startswith("http"): e["img"] = man[e["a"]]
+        if isinstance(man.get(e["a"]), str) and man[e["a"]].startswith(("http", "locandine/")): e["img"] = man[e["a"]]
     print("Locandine presenti:", sum(1 for e in ev_all if e["img"]), "su", len(ev_all))
+
+PAGINE = {"politeama": ["https://www.politeamagenovese.it/", "https://www.politeamagenovese.it/carnet-2026-2027/"],
+          "carlofelice": ["https://www.carlofelice.it/"], "gog": ["https://www.gog.it/rassegne/430-stagione-gog-2026-2027.htm"]}
+GENERICI = {"politeama": "https://www.politeamagenovese.it", "carlofelice": "https://www.carlofelice.it", "gog": "https://www.gog.it"}
+
+def link_spettacoli(ev_all, prev, rete=True):
+    """Sostituisce il link generico del teatro con la pagina dello spettacolo, se la trova nel sito del teatro."""
+    vecchi = {(e["a"], e["s"]): e["u"] for e in prev}
+    ancore = {}
+    if rete:
+        for src, pagine in PAGINE.items():
+            for pg in pagine:
+                try: html = get(pg)
+                except Exception: continue
+                for h, t in links(html): ancore.setdefault(src, []).append((urllib.parse.urljoin(pg, h), norm(t), pg))
+    for e in ev_all:
+        gen = GENERICI.get(e["src"])
+        if not gen or e["u"].rstrip("/") != gen: continue
+        old = vecchi.get((e["a"], e["s"]), "")
+        if old and old.rstrip("/") != gen: e["u"] = old; continue
+        n = norm(e["a"])
+        if len(n) < 4: continue
+        for h, t, pg in ancore.get(e["src"], []):
+            u, b = urllib.parse.urlparse(h), urllib.parse.urlparse(pg)
+            if n in t and u.netloc == b.netloc and u.path.strip("/") and h.rstrip("/") != pg.rstrip("/") and "#" not in h:
+                e["u"] = h; break
+    print("Link diretti agli spettacoli:", sum(1 for e in ev_all if e["src"] in GENERICI and e["u"].rstrip("/") != GENERICI[e["src"]]), "su", sum(1 for e in ev_all if e["src"] in GENERICI))
 
 def indovina_src(e):
     if e.get("src"): return e["src"]
@@ -317,6 +352,7 @@ def main():
                 ev_all = [e for e in ev_all if not (e["src"] == nome and (e["a"], e["s"]) in chiavi)] + nuovi
             fonti[nome] = {"ok": True, "n": len(nuovi), "data": oggi}; print(f"[{nome}] ok: {len(nuovi)} eventi")
     locandine(ev_all, prev, rete=not solo_norm)
+    link_spettacoli(ev_all, prev, rete=not solo_norm)
     limite = (TODAY - dt.timedelta(days=2)).isoformat()
     ev_all = sorted([e for e in ev_all if e["e"] >= limite], key=lambda e: (e["s"], e["a"]))
     agg = j.get("updated", oggi) if isinstance(j, dict) else oggi

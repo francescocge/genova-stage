@@ -92,4 +92,15 @@ E += [A.ev("Manuale","","V","","2026-12-09","2026-12-09","t","T",src="manuale"),
 A.locandine(E, [])
 im = {e["a"]: e["img"] for e in E}
 assert im["A"] == "https://t.it/a.jpg" and im["G0"] == "" and im["Manuale"] == "https://x.it/m.jpg" and im["Rotto"] == ""
+assert A.slug("Günther Groissböck e Julius Drake") == "gunther-groissbock-e-julius-drake" and A.slug("Fratello Sole, Sorella Luna") == "fratello-sole-sorella-luna"
+os.makedirs("locandine"); open("locandine/arisa.png", "w").write("x")
+E2 = [A.ev("Arisa","","V","","2026-12-09","2026-12-09","c","C",src="manuale"), A.ev("Altro","","V","","2026-12-10","2026-12-10","c","C",src="manuale")]
+A.locandine(E2, [], rete=False)
+assert E2[0]["img"] == "locandine/arisa.png" and E2[1]["img"] == ""
+pag = {"https://www.politeamagenovese.it/": '<a href="/spettacolo/arisa/">Arisa Live Tour</a><a href="/contatti/">Contatti</a><a href="/">Home</a>'}
+A.get = lambda u, b=False: pag.get(u, "")
+E3 = [A.ev("Arisa","Live Tour","Politeama Genovese","https://www.politeamagenovese.it","2026-12-09","2026-12-09","c","C",src="politeama"),
+      A.ev("Elio","","Politeama Genovese","https://www.politeamagenovese.it","2026-12-10","2026-12-10","c","C",src="politeama")]
+A.link_spettacoli(E3, [])
+assert E3[0]["u"] == "https://www.politeamagenovese.it/spettacolo/arisa/" and E3[1]["u"] == "https://www.politeamagenovese.it"
 print("TUTTI I TEST OK:", len(n), "Nazionale,", len(c), "Carlo Felice,", len(g), "GOG,", len(t), "Tosse,", len(p), "Politeama")
