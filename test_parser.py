@@ -103,4 +103,10 @@ E3 = [A.ev("Arisa","Live Tour","Politeama Genovese","https://www.politeamagenove
       A.ev("Elio","","Politeama Genovese","https://www.politeamagenovese.it","2026-12-10","2026-12-10","c","C",src="politeama")]
 A.link_spettacoli(E3, [])
 assert E3[0]["u"] == "https://www.politeamagenovese.it/spettacolo/arisa/" and E3[1]["u"] == "https://www.politeamagenovese.it"
+film = {"id":"f1","tmdbId":1,"titleIt":"Digger","genres":["Commedia"],"duration":129,"posterUrl":"/a.jpg","plotIt":"Trama","cinemaShowtimes":[{"cinemaName":"Cinema City","showtimes":[
+  {"datetime":"$D2026-11-08T20:15:00.000Z","language":"VOS","format":"STANDARD_2D","bookingUrl":""},{"datetime":"$D2026-11-08T15:00:00.000Z","language":"IT","format":"IMAX","bookingUrl":"https://x"}]}]}
+cm = A.parse_cinemap("<script>self.__next_f.push([1," + json.dumps("5:[" + json.dumps(film) + "]") + "])</script>")
+f0 = cm["films"][0]
+assert cm["data"] == "2026-11-08" and f0["t"] == "Digger" and f0["p"].endswith("/a.jpg")
+assert [(o["h"], o["l"], o["f"]) for o in f0["c"][0]["o"]] == [("16:00","IT","IMAX"),("21:15","VOS","")]
 print("TUTTI I TEST OK:", len(n), "Nazionale,", len(c), "Carlo Felice,", len(g), "GOG,", len(t), "Tosse,", len(p), "Politeama")

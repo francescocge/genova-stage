@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-# aggiorna_eventi.py v1.3 (link diretti alle pagine degli spettacoli + locandine) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
+# aggiorna_eventi.py v1.4 (aggiunge i film in sala oggi a Genova, da CineMap) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
 # Regola di sicurezza: se un sito cambia e il programma legge troppo poco, i dati vecchi di quel teatro restano.
+from zoneinfo import ZoneInfo
 import os, unicodedata, json, re, sys, subprocess, tempfile, collections, datetime as dt, urllib.request, urllib.parse
 from html.parser import HTMLParser
 
@@ -220,6 +221,34 @@ def parse_politeama(testo):
         if k not in visti: visti.add(k); uniq.append(e)
     return uniq
 
+# ---------- Cinema (CineMap: film in sala oggi a Genova) ----------
+def parse_cinemap(html):
+    chunks = re.findall(r'self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)', html)
+    txt = "".join(json.loads('"' + c + '"') for c in chunks)
+    dec, film = json.JSONDecoder(), {}
+    for m in re.finditer(r'\{"id":\s*"[^"]+",\s*"tmdbId":', txt):
+        try: o, _ = dec.raw_decode(txt, m.start())
+        except ValueError: continue
+        if "titleIt" in o: film[o["id"]] = o
+    roma = ZoneInfo("Europe/Rome")
+    def ora(x): return dt.datetime.fromisoformat(x.replace("$D", "").replace("Z", "+00:00")).astimezone(roma)
+    giorni = collections.Counter(ora(s["datetime"]).date() for o in film.values() for c in (o.get("cinemaShowtimes") or []) for s in c["showtimes"])
+    if not giorni: return None
+    data = giorni.most_common(1)[0][0]
+    out = []
+    for o in film.values():
+        cin = []
+        for c in o.get("cinemaShowtimes") or []:
+            oo = [{"h": ora(s["datetime"]).strftime("%H:%M"), "l": s.get("language") or "", "f": "IMAX" if s.get("format") == "IMAX" else "", "u": s.get("bookingUrl") or ""}
+                  for s in sorted(c["showtimes"], key=lambda s: s["datetime"]) if ora(s["datetime"]).date() == data]
+            if oo: cin.append({"n": c["cinemaName"], "o": oo})
+        if cin:
+            p = o.get("posterUrl") or ""
+            out.append({"t": o["titleIt"], "g": o.get("genres") or [], "d": o.get("duration") or 0,
+                        "p": ("https://image.tmdb.org/t/p/w342" + p) if p.startswith("/") else "", "x": (o.get("plotIt") or "")[:240], "c": cin})
+    out.sort(key=lambda f: -sum(len(c["o"]) for c in f["c"]))
+    return {"data": data.isoformat(), "fonte": "CineMap", "films": out}
+
 # ---------- rete ----------
 def get(url, binario=False):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
@@ -353,11 +382,18 @@ def main():
             fonti[nome] = {"ok": True, "n": len(nuovi), "data": oggi}; print(f"[{nome}] ok: {len(nuovi)} eventi")
     locandine(ev_all, prev, rete=not solo_norm)
     link_spettacoli(ev_all, prev, rete=not solo_norm)
+    cin = j.get("cinema") if isinstance(j, dict) else None
+    if not solo_norm:
+        try:
+            nuovo = parse_cinemap(get("https://www.cinemap.it/genova"))
+            if nuovo and len(nuovo["films"]) >= 5: cin = nuovo; print(f"[cinema] ok: {len(nuovo['films'])} film del {nuovo['data']}")
+            else: print("[cinema] pochi dati: tengo i vecchi")
+        except Exception as x: print(f"[cinema] ERRORE: {x}")
     limite = (TODAY - dt.timedelta(days=2)).isoformat()
     ev_all = sorted([e for e in ev_all if e["e"] >= limite], key=lambda e: (e["s"], e["a"]))
     agg = j.get("updated", oggi) if isinstance(j, dict) else oggi
     if not solo_norm and not falliti: agg = oggi
-    json.dump({"updated": agg, "version": "auto", "fonti": fonti, "events": ev_all}, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"updated": agg, "version": "auto", "fonti": fonti, "cinema": cin, "events": ev_all}, open(FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"Totale {len(ev_all)} eventi. Fonti con problemi: {falliti or 'nessuna'}")
 
 if __name__ == "__main__": main()

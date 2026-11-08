@@ -2655,5 +2655,1526 @@
    "d": "7 Luglio 2027",
    "src": "manuale"
   }
- ]
+ ],
+ "cinema": {
+  "data": "2026-11-08",
+  "fonte": "CineMap",
+  "films": [
+   {
+    "t": "Se domani non torno",
+    "g": [
+     "Dramma"
+    ],
+    "d": 106,
+    "p": "https://image.tmdb.org/t/p/w342/cBzYad8BrcrlprHa17O4UDnACC1.jpg",
+    "x": "Giulia è la figlia ideale. Studia, disegna, sogna di vivere in una brughiera, colleziona scatole e regala sorrisi dolcissimi. Poi una sera scompare, inghiottita da una morte assurda: un femminicidio. Travolto dal dolore più atroce che un pa",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "13:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "14:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "15:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "17:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "20:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59530"
+       },
+       {
+        "h": "16:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59536"
+       },
+       {
+        "h": "19:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59537"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59226"
+       }
+      ]
+     },
+     {
+      "n": "Cinema America",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/98315/d78deef9-a815-4355-927e-068ca35b9fdf#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/98315/f5934dc1-9f57-4dc8-90ec-501eb5fc34d9#theater-init"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/98315/1f97e4ed-296a-4dbd-8b5b-173c98c2b81e#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "17:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/9832_se-domani-non-torno"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/9832_se-domani-non-torno"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Dio ride",
+    "g": [
+     "Commedia",
+     "Dramma"
+    ],
+    "d": 114,
+    "p": "https://image.tmdb.org/t/p/w342/lzXRa7v32P7bX56Cgw7ydP1XFIq.jpg",
+    "x": "Nel cuore del ‘600, Frate Leopoldo da Casamacchia racconta il Vangelo con una gioia e una libertà mai viste prima. Mentre la Chiesa parla in latino, lui parla alla gente di un Dio vicino, capace di portare sollievo, speranza e persino di ri",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "12:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003797/59533"
+       }
+      ]
+     },
+     {
+      "n": "Cinema San Pietro",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sanpietro.ccgenova.18tickets.it/film/96698/99f8c02e-5723-4f39-8bec-f2c976fc6eb3#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sanpietro.ccgenova.18tickets.it/film/96698/c529749c-7755-4bf0-9784-cd451e988374#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96698/ac8347de-b0ef-415d-8a73-24196572b91b#theater-init"
+       },
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96698/cf653e3a-85a7-41f4-af76-112d4b87bde8#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96698/7eea584d-7e66-482c-b9eb-6ceae2cda0da#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "15:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/96698/e618e049-1873-4544-93cf-f45b77c5c035#theater-init"
+       },
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/96698/a7250994-9fe7-413d-a232-a5f4c053d6d1#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/96698/f05b9b9b-ac39-484c-93e4-b9765043b328#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "16:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "17:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10345_dio-ride"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10345_dio-ride"
+       }
+      ]
+     },
+     {
+      "n": "Nuovo Cinema Palmaro",
+      "o": [
+       {
+        "h": "18:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/palmaro/titolo/564_dio-ride"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/palmaro/titolo/564_dio-ride"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Il gatto col cappello",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Avventura",
+     "Fantasy",
+     "Famiglia"
+    ],
+    "d": 91,
+    "p": "https://image.tmdb.org/t/p/w342/t7WBklMsn2rlzhcRLLzego99h1Y.jpg",
+    "x": "Scopri Il Gatto col Cappello come non l’hai mai visto prima! Dal meraviglioso e stravagante mondo di Dr. Seuss, Il Gatto col Cappello arriva per la prima volta sul grande schermo da protagonista di un film d’animazione: un’avventura epica, ",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "13:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "14:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10615_il-gatto-col-cappell"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10615_il-gatto-col-cappell"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/98183/76a00024-4040-432a-a9e0-bf3825606197#theater-init"
+       },
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/98183/893079d5-efc2-4554-9e87-f6ff69fa8d6e#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "15:35",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003165/59534"
+       },
+       {
+        "h": "17:55",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003165/59225"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Wild Horse Nine",
+    "g": [
+     "Commedia",
+     "Crime",
+     "Thriller"
+    ],
+    "d": 116,
+    "p": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
+    "x": "Cile, 1973. Chris e Lee sono due agenti della CIA distaccati in Sud America, costretti ad affrontare un complicato viaggio da Santiago all'Isola di Pasqua che metterà a dura prova la loro fiducia reciproca.",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:30",
+        "l": "VOS",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "15:20",
+        "l": "VOS",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "11:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003652/59529"
+       },
+       {
+        "h": "18:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003652/59540"
+       },
+       {
+        "h": "20:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003652/59532"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Corallo",
+      "o": [
+       {
+        "h": "16:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/98414/0845eaf3-ef80-4252-bd6e-af8a808ab58f#theater-init"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/98414/182a4866-91f0-41de-8861-3ce0e6a41dca#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/98415/e9bf4301-f1d1-49f8-b90d-3ecb8e90b178#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Un tranquillo funerale di famiglia",
+    "g": [
+     "Commedia"
+    ],
+    "d": 98,
+    "p": "https://image.tmdb.org/t/p/w342/iXtZ4Y28GTw1BJFHgcmHrICoyL1.jpg",
+    "x": "Nel giorno del funerale del patriarca della famiglia Mancuso, i due figli Daria e Riccardo si ritrovano a fare i conti con rancori mai sopiti e segreti inconfessati. Quella che dovrebbe essere una solenne cerimonia di commiato si trasforma ",
+    "c": [
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10348_un-tranquillo-funera"
+       },
+       {
+        "h": "19:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10348_un-tranquillo-funera"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "16:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "20:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema America",
+      "o": [
+       {
+        "h": "16:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/96599/3b809af3-a8d0-4867-a03d-25d7fc3c4bec#theater-init"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/96599/09cd42b6-6924-4e49-ac2f-b22ddb245c8a#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/96599/f739f310-d788-4c8f-a3af-9513d1c3526b#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema San Pietro",
+      "o": [
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://sanpietro.ccgenova.18tickets.it/film/96599/6fabe144-caa8-41ed-9ffc-96adf3bda2a5#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Hope",
+    "g": [
+     "Fantascienza",
+     "Mistero",
+     "Azione"
+    ],
+    "d": 157,
+    "p": "https://image.tmdb.org/t/p/w342/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
+    "x": "I rinforzi sono stati richiamati per fronteggiare i devastanti incendi boschivi e ogni comunicazione con l’esterno è stata interrotta. Nel piccolo posto di polizia di Hope, il comandante Bum-seok e l’agente Sung-ae lottano per proteggere un",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:30",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:40",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "22:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003798/59586"
+       },
+       {
+        "h": "20:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003798/59542"
+       }
+      ]
+     },
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "VOS",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/98381/cef0e9cf-b00c-4b7b-8605-8cf087985048#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Famiglia",
+     "Avventura",
+     "Horror"
+    ],
+    "d": 88,
+    "p": "https://image.tmdb.org/t/p/w342/hIgvOtvwbNCUclH0uBvg2qn6Ye.jpg",
+    "x": "Halloween è alle porte. Shaun e tutti gli animali della fattoria si preparano per festeggiarlo al meglio coltivando un magnifico campo di zucche. Ma quando tutto sembrava ormai pronto, il contadino misteriosamente scompare e arriva dal bosc",
+    "c": [
+     {
+      "n": "Filmclub",
+      "o": [
+       {
+        "h": "10:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/98447/0877640e-f491-4700-9d3b-1a495f4bbca0#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "13:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "17:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96699/63a4744e-c827-414c-acfe-dd0d3c71c734#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Clayface",
+    "g": [
+     "Horror",
+     "Thriller",
+     "Fantascienza"
+    ],
+    "d": 108,
+    "p": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+    "x": "La terrificante discesa di un uomo, da astro nascente di Hollywood a mostro assetato di vendetta, in una storia che esplora la perdita di identità e umanità, l’amore corrosivo e il lato oscuro dell’ambizione scientifica.",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "13:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "22:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Digger",
+    "g": [
+     "Commedia"
+    ],
+    "d": 129,
+    "p": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+    "x": "Su richiesta del Presidente degli Stati Uniti, il magnate del petrolio Digger Rockwell deve salvare la Terra da un disastro ambientale causato dalla sua stessa azienda.",
+    "c": [
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/88750/fad08310-3b07-4ec3-a48e-54a71ed34b5f#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/88750/1a051fea-2ed6-4a80-992a-54dee5d0819d#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/88751/d3e00397-b4b0-447b-833a-8b30f2017ebf#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Fatherland",
+    "g": [
+     "Dramma",
+     "Storia"
+    ],
+    "d": 82,
+    "p": "https://image.tmdb.org/t/p/w342/7VjwmvDG5mksJBXMcmK6PudqH88.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cinema Ariston",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93169/1208120a-2fd3-4bb5-b695-d0b0b1369468#theater-init"
+       },
+       {
+        "h": "17:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93169/99846b09-2171-4609-93e1-ca5b343d6c11#theater-init"
+       },
+       {
+        "h": "19:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93169/4e2fe6d1-07e0-446b-92cb-efbc9e132f6b#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ice Cream Man",
+    "g": [
+     "Commedia",
+     "Horror",
+     "Thriller"
+    ],
+    "d": 86,
+    "p": "https://image.tmdb.org/t/p/w342/A6XDkLE53nAHKxkBZQmARLkjJ7U.jpg",
+    "x": "Un'idilliaca cittadina di villeggiatura estiva precipita nell’orrore, quando un gelataio offre ai bambini dolci prelibatezze dalle conseguenze terrificanti.",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "22:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003831/59538"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "22:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "23:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Je so’ pazzo",
+    "g": [
+     "Dramma",
+     "Musica"
+    ],
+    "d": 120,
+    "p": "https://image.tmdb.org/t/p/w342/impo3YqfZZbJUI3woorG0OYV3XI.jpg",
+    "x": "Je so’ pazzo è un ritratto intenso di Pino Daniele, un’anima ribelle nata nei vicoli di Napoli, che ha rivoluzionato la musica italiana fondendo blues, jazz e tradizione partenopea.  Il film racconta la sua ascesa, dagli anni difficili dell",
+    "c": [
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "11:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/98480/2b5f0ce7-61b3-42c0-9e0f-7c020c0cf3ab#theater-init"
+       },
+       {
+        "h": "17:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/93167/5c94952b-530e-4187-a929-0af807093463#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/93167/b032f5f1-c5c3-4a8e-9ba0-1897506eeaa4#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Minotaur",
+    "g": [
+     "Dramma",
+     "Crime",
+     "Thriller"
+    ],
+    "d": 135,
+    "p": "https://image.tmdb.org/t/p/w342/bM37B5CuMWrPyGPpNsKzTGict4Q.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cinema Ariston",
+      "o": [
+       {
+        "h": "15:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/96665/8af736b2-804e-471a-85a8-4357a3ea1f37#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/96665/70066c38-b783-486c-bc70-c5cc059ea29c#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/96665/8a66f57a-8262-4445-84d9-e8d17d4b9f50#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ragione e sentimento",
+    "g": [
+     "Dramma",
+     "Romance"
+    ],
+    "d": 132,
+    "p": "https://image.tmdb.org/t/p/w342/bwZCHb0qCFP2QT3QylGixpsNo8D.jpg",
+    "x": "La storia segue le vicende delle sorelle Elinor e Marianne Dashwood che, insieme alla madre e alla sorella minore Margaret, si ritrovano improvvisamente in ristrettezze economiche dopo la morte del padre, la cui eredità passa interamente al",
+    "c": [
+     {
+      "n": "Cinema Corallo",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/94817/515c5060-63da-4252-8a25-45233eebefc4#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/94817/2866966b-7082-4e10-afca-14809fe1b7d2#theater-init"
+       },
+       {
+        "h": "21:00",
+        "l": "VOS",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/94818/afb0b638-1478-46ca-8ed2-bda50555992a#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Wildwood - I segreti del bosco proibito",
+    "g": [
+     "Animazione",
+     "Avventura",
+     "Fantasy"
+    ],
+    "d": 132,
+    "p": "https://image.tmdb.org/t/p/w342/54qDl2tQh8iotrm3lX1VdxtnRZ.jpg",
+    "x": "Wildwood, nei dintorni di Portland, è un posto da cui tenersi lontani e che dovrebbe rimanere nascosto a tutti. Prue McKeel, tuttavia, è costretta a raggiungerlo dopo che il fratellino Mac è stato rapito da uno stormo di corvi e trasportato",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "14:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "17:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003740/59531"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Calle Málaga",
+    "g": [
+     "Dramma"
+    ],
+    "d": 116,
+    "p": "https://image.tmdb.org/t/p/w342/fWagBXNDk44UaupYtwQOAvDwGiT.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cineclub Nickelodeon",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.liveticket.it/evento.aspx?Id=711464&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcineclubnickelodeon"
+       }
+      ]
+     },
+     {
+      "n": "Cineclub Fritz Lang",
+      "o": [
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.fritzlang.it/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "It Ends",
+    "g": [
+     "Horror",
+     "Mistero"
+    ],
+    "d": 89,
+    "p": "https://image.tmdb.org/t/p/w342/6dfAGvZWbJnzWfSZ8gxFj63BNAH.jpg",
+    "x": "Quattro amici appena diplomati partono per un giro in auto a tarda notte, sperando di godersi un’ultima serata insieme prima che le loro vie si dividano, ma si ritrovano intrappolati in una misteriosa strada senza fine, circondati da fenome",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "19:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "La casa delle donne",
+    "g": [],
+    "d": 98,
+    "p": "https://image.tmdb.org/t/p/w342/9djjPVkmoF9O0NLmq9OJoesfhyq.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Filmclub",
+      "o": [
+       {
+        "h": "15:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/96700/4592e3c7-5503-47e1-9f55-c22e8ddff63d#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/96700/1e564fb4-7e21-4136-937a-b9db53ddebfc#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Taddeo l’esploratore e la lampada magica",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Famiglia"
+    ],
+    "d": 94,
+    "p": "https://image.tmdb.org/t/p/w342/71G1b8bqa7gzP9yU7q2fgNf2t0D.jpg",
+    "x": "Taddeo e Sara sono diventati genitori della piccola Oli. Durante una vacanza a Londra, trovano la Lampada delle Mille e una Notte. Un desiderio inaspettato della Momia fa viaggiare il gruppo nel tempo: dovranno attraversare diverse epoche, ",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:05",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003586/59539"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Elaha",
+    "g": [
+     "Dramma"
+    ],
+    "d": 110,
+    "p": "https://image.tmdb.org/t/p/w342/9cFi5IHILZB2UQWMywGGp7n23qx.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cineclub Nickelodeon",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.liveticket.it/evento.aspx?Id=711465&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcineclubnickelodeon"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Elon Musk Uncovered: Das Tesla-Experiment",
+    "g": [
+     "Documentario"
+    ],
+    "d": 90,
+    "p": "https://image.tmdb.org/t/p/w342/3zQwMGwaqJnYefiMUvTd4bDeokX.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Filmclub",
+      "o": [
+       {
+        "h": "18:00",
+        "l": "VOS",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/98481/b9c8d547-da9f-47bc-804b-e561854c7516#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Fast and Furious",
+    "g": [
+     "Azione",
+     "Crime",
+     "Thriller"
+    ],
+    "d": 106,
+    "p": "https://image.tmdb.org/t/p/w342/fMhRkSfn1gA7RriWlSAk9yCuZWp.jpg",
+    "x": "Per la strade di Los Angeles, gli amanti di motori e velocità competono in gare clandestine, sfrecciando su automobili dalle carene fiammanti e dai carburanti pompati a protossido di azoto. Incaricato di indagare su un clan di rapinatori ch",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "19:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ferine",
+    "g": [
+     "Horror",
+     "Dramma"
+    ],
+    "d": 105,
+    "p": "https://image.tmdb.org/t/p/w342/jwFXsXC7bBBZipa6moVlxTsYh8H.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "22:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Frankie e le creature dimenticate",
+    "g": [
+     "Animazione",
+     "Avventura",
+     "Famiglia",
+     "Commedia"
+    ],
+    "d": 91,
+    "p": "https://image.tmdb.org/t/p/w342/AaDoLXs4D22i65OLw7HxMkj5sKN.jpg",
+    "x": "Stitch Head è stata la prima creatura riportata a una “quasi vita” dal folle professor Erasmus. Negli anni successivi è diventato il custode della sempre più ampia collezione di creature trascurate del suo padrone, con il compito di insegna",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "George Michael: The Faith Tour",
+    "g": [
+     "Musica",
+     "Documentario"
+    ],
+    "d": 113,
+    "p": "https://image.tmdb.org/t/p/w342/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "19:00",
+        "l": "VOS",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Goat - Sogna in Grande",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Famiglia",
+     "Azione"
+    ],
+    "d": 100,
+    "p": "https://image.tmdb.org/t/p/w342/2iobI8LOcnu3nyCSgmqux2dtkrV.jpg",
+    "x": "Will, una piccola capra con grandi sogni, all’improvviso ha l’occasione di entrare nella lega professionistica di “pallaruggente”, uno sport ad alto tasso di adrenalina, dominato dagli animali più veloci e feroci del pianeta. I suoi nuovi c",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "11:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003425/59233"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ho sognato un angelo",
+    "g": [
+     "Dramma",
+     "Romance"
+    ],
+    "d": 125,
+    "p": "https://image.tmdb.org/t/p/w342/7ulGTVdIXlNkBhuxYQs0x88O82H.jpg",
+    "x": "Il matrimonio di Julie e Roger Adams (Irene Dunne e Cary Grant) sembra ormai volgere al termine, ma la donna decide di ripercorrere la propria vicenda di coppia riascoltando vecchi dischi. Sul filo della memoria finirà per rievocare le tapp",
+    "c": [
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "11:00",
+        "l": "VOS",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/98448/361c85ea-e65c-4878-b44e-cf7e9678e656#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Il Gruffalo' e la Sua P+bastoncino Aut.",
+    "g": [],
+    "d": 0,
+    "p": "",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Il Gruffalo' e la Sua Picc + Bastoncino",
+    "g": [],
+    "d": 0,
+    "p": "",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "L'estranea",
+    "g": [
+     "Dramma",
+     "Thriller"
+    ],
+    "d": 115,
+    "p": "https://image.tmdb.org/t/p/w342/6GisyPsQBvnpgMKXqtPuwJqpZzl.jpg",
+    "x": "La trama ruota attorno a una donna che si presenta all’improvviso a casa di sua figlia per raccontarle la verità sulla loro famiglia, segnata da un patto stretto molti anni prima con un’estranea. Un segreto custodito troppo a lungo, che ora",
+    "c": [
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/91123/75e70c90-d555-424c-85f1-3d5ea07393b0#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Le Cose Non Dette",
+    "g": [
+     "Dramma"
+    ],
+    "d": 114,
+    "p": "https://image.tmdb.org/t/p/w342/sK4MZKEzQk5ajgLKI8QnU129UdY.jpg",
+    "x": "Tra Tangeri e Roma, le fragilità, i desideri, le insidie e i momenti di luce nei rapporti tra donne e uomini, madri e figlie, amanti e disincanti. La sottilissima linea tra bene e male e di ciò che scorre in mezzo alle nostre vite travolgen",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "11:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003361/59248"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "NAZA",
+    "g": [
+     "Documentario"
+    ],
+    "d": 80,
+    "p": "https://image.tmdb.org/t/p/w342/aXlTjDmbYVNjGWt256MWeYVKFN.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Club Amici del Cinema",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "http://www.clubamicidelcinema.it/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Nel silenzio delle stanze",
+    "g": [
+     "Dramma",
+     "Storia"
+    ],
+    "d": 103,
+    "p": "https://image.tmdb.org/t/p/w342/r47BxFNFATfapHfQ2m4iHYgZwVc.jpg",
+    "x": "Normandia, 1908. Céleste è una giovane domestica che lavora nella grande villa di André, un ricco notaio, e sua moglie Victoire, una donna oppressa dalle convenzioni borghesi che la vogliono moglie modello. Un giorno Victoire scopre che Cél",
+    "c": [
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/96703/4d1cd7a3-57c8-4bda-bdd5-b9490b86e5fd#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Odissea",
+    "g": [
+     "Avventura",
+     "Azione",
+     "Fantasy"
+    ],
+    "d": 172,
+    "p": "https://image.tmdb.org/t/p/w342/5S4U3gM7N17ni028LJhO60zfcKJ.jpg",
+    "x": "Ulisse, il leggendario re greco di Itaca, intraprende un lungo e pericoloso viaggio verso casa dopo la guerra di Troia, raccontando i suoi incontri con esseri mitici come il ciclope Polifemo, le Sirene e la dea strega Circe.",
+    "c": [
+     {
+      "n": "Club Amici del Cinema",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "",
+        "u": "http://www.clubamicidelcinema.it/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "The Nameless Ballad",
+    "g": [
+     "Horror"
+    ],
+    "d": 87,
+    "p": "https://image.tmdb.org/t/p/w342/g691fkK4mB5GCFziGG7gZP6oP2Y.jpg",
+    "x": "Sam Gallo (Jamie Ward) è un giovane musicista di successo dalla personalità fragile e introversa. Schiacciato dalla pressione di dover creare nuove canzoni e tormentato da dipendenze che non riesce a superare, Sam si ritira in una villa ita",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "22:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Vaterland",
+    "g": [
+     "Documentario"
+    ],
+    "d": 98,
+    "p": "https://image.tmdb.org/t/p/w342/3MSvbMwNxV8tgxdcvEXrUlW9c7D.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cinema Ariston",
+      "o": [
+       {
+        "h": "21:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93170/f93f9274-d7c6-441e-be00-987dfc56bde9#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Zustìssia",
+    "g": [
+     "Dramma"
+    ],
+    "d": 111,
+    "p": "https://image.tmdb.org/t/p/w342/15IfVZjAiwUkTx7Bib58wJTjOSi.jpg",
+    "x": "Nel 1991, un triplice omicidio commesso sui monti del Sud Sardegna porta alla rapida condanna di un uomo innocente: Beniamino Zuncheddu. Tre gradi di giudizio in un anno per dare un ergastolo. Venticinque anni dopo, un giovane avvocato deci",
+    "c": [
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/93200/abc33099-1c39-4e4f-9b98-a2d5d91bb9f7#theater-init"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
 }
