@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- Genova Stage - versione v2.2 (da v2.1: schede cinema con locandina intera a sinistra e titolo leggibile, orari sotto) (da v2.0: film in sala oggi con locandine e orari cliccabili, letti ogni notte da CineMap) (da v1.9: nuova scheda Cinema con elenco sale e link alla programmazione di oggi) (da v1.8: il pulsante biglietti porta alla pagina dello spettacolo, o a una ricerca dello spettacolo se il link preciso non c'è; link al sito del teatro a parte) (da v1.7: filtro per genere comicità/musical/opera/ecc, filtri che si aggiornano con i dati nuovi, intestazione non fissa) (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
+<!-- Genova Stage - versione v2.3 (da v2.2: film mostrati anche con orari di uno o due giorni fa, indicando la data; ogni cinema apre il proprio sito, o Google Maps se il sito è condiviso) (da v2.1: schede cinema con locandina intera a sinistra e titolo leggibile, orari sotto) (da v2.0: film in sala oggi con locandine e orari cliccabili, letti ogni notte da CineMap) (da v1.9: nuova scheda Cinema con elenco sale e link alla programmazione di oggi) (da v1.8: il pulsante biglietti porta alla pagina dello spettacolo, o a una ricerca dello spettacolo se il link preciso non c'è; link al sito del teatro a parte) (da v1.7: filtro per genere comicità/musical/opera/ecc, filtri che si aggiornano con i dati nuovi, intestazione non fissa) (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genova Stage v2.2</title>
+<title>Genova Stage v2.3</title>
 <style>
 :root{--bg:#0e1a2b;--card:#16263b;--card2:#1d3150;--gold:#d4af37;--gold2:#f0dc8c;--txt:#f3f5f8;--dim:#9fb0c6;--line:#2a3f5e}
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
@@ -343,19 +343,22 @@ const CINEMA=[
 {n:"Sala Enzo Costa (Sori)",a:"Sori, provincia di Genova",o:"https://www.mymovies.it/cinema/genova/provincia/"}];
 function renderCinema(){
   const q=$("q").value.toLowerCase().trim();
-  const fresco=CIN&&CIN.data===today&&CIN.films&&CIN.films.length;
+  const giorniCin=CIN?Math.round((new Date(today)-new Date(CIN.data))/864e5):99;
+  const fresco=CIN&&CIN.films&&CIN.films.length&&giorniCin<=2;
   const l=(u,t,c)=>`<a class="btn${c||""}" style="margin-top:10px" target="_blank" rel="noopener" href="${esc(u)}">${t}</a>`;
   if(fresco){
     const F=CIN.films.filter(f=>(f.t+" "+f.c.map(c=>c.n).join(" ")).toLowerCase().includes(q));
-    $("count").textContent=F.length+" film in sala oggi · orari del "+CIN.data.split("-").reverse().join("/");
+    $("count").textContent=F.length+" film in sala · orari del "+CIN.data.split("-").reverse().join("/")+(giorniCin>0?" (non di oggi: il programma li aggiorna ogni notte)":"");
     $("grid").innerHTML=F.map(f=>`<div class="card"><div class="film">${f.p?`<img src="${esc(f.p)}" alt="Locandina ${esc(f.t)}" loading="lazy" onerror="this.remove()">`:""}<div class="fi"><div class="ft">${esc(f.t)}</div><div class="ve">${esc((f.g||[]).join(", "))}${f.d?" · "+f.d+" min":""}</div>${f.x?`<div class="fx">${esc(f.x)}</div>`:""}</div></div><div class="body" style="padding-top:0">${f.c.map(c=>`<div class="ve" style="margin-top:8px"><b style="color:var(--gold2)">${esc(c.n)}</b></div><div class="orari">${c.o.map(o=>{const t=o.h+(o.l==="VOS"?" V.O.":"")+(o.f?" "+o.f:"");return o.u?`<a class="ora" target="_blank" rel="noopener" href="${esc(o.u)}">${esc(t)}</a>`:`<span class="ora">${esc(t)}</span>`}).join("")}</div>`).join("")}</div></div>`).join("")+
     `<div class="empty" style="font-size:.8rem">Orari e dati: CineMap · Immagini: TMDB. Controlla sempre l'orario con il cinema prima di partire.</div>`;
     return;
   }
   const L=CINEMA.filter(c=>(c.n+" "+c.a).toLowerCase().includes(q));
-  $("count").textContent="Orari di oggi non ancora disponibili · "+L.length+" cinema";
+  const cond={};CINEMA.forEach(c=>cond[c.o]=(cond[c.o]||0)+1);
+  const link=c=>cond[c.o]>1?"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(c.n+" Genova"):c.o;
+  $("count").textContent="Orari non disponibili al momento · "+L.length+" cinema";
   $("grid").innerHTML=`<div class="card" style="grid-column:1/-1"><div class="body"><div class="art">Film in sala oggi a Genova</div><div class="ve">Gli orari di oggi non sono ancora stati caricati. Aprili sul sito.</div>${l("https://www.mymovies.it/cinema/genova/","Film e orari di oggi","")}${l("https://www.cinemap.it/genova","Cerca per film","s")}</div></div>`+
-  L.map(c=>`<div class="card"><div class="body"><div class="art">${esc(c.n)}</div><div class="ve">📍 ${esc(c.a)}</div>${c.t?`<div class="ve">📞 ${esc(c.t)}</div>`:""}${l(c.o,"Programmazione e orari","")}</div></div>`).join("");
+  L.map(c=>`<div class="card"><div class="body"><div class="art">${esc(c.n)}</div><div class="ve">📍 ${esc(c.a)}</div>${c.t?`<div class="ve">📞 ${esc(c.t)}</div>`:""}${l(link(c),cond[c.o]>1?"Apri su Google Maps":"Programmazione e orari","")}</div></div>`).join("");
 }
 function render(){
   $("grid").classList.toggle("cin",cat==="cinema");
@@ -406,7 +409,7 @@ $("modal").addEventListener("click",e=>{if(e.target.id==="modal")$("modal").styl
 $("ics").onclick=ics;
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;gen=b.dataset.g;buildFilters();render()});
 let UPDATED="2026-11-07";const UPDATE_URL="events-data.json";
-function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri, Concerti & Cinema · v2.2 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
+function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri, Concerti & Cinema · v2.3 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
 setVer();render();
 // AGGIORNAMENTO ONLINE: a ogni apertura la pagina scarica events-data.json (nella stessa cartella). Se non c'è internet o il file manca, usa i dati incorporati qui sopra.
 (async()=>{try{const x=await fetch(UPDATE_URL,{cache:"no-store"});if(!x.ok)return;const j=await x.json(),L=Array.isArray(j)?j:j.events;if(j&&j.cinema)CIN=j.cinema;if(!Array.isArray(L)||!L.length)return;EVENTS.length=0;L.forEach(e=>{e.e=e.e||e.s;e.d=e.d||fmt(e.s,e.e);EVENTS.push(e)});EVENTS.sort((a,b)=>a.s<b.s?-1:1);if(j.updated)UPDATED=j.updated;buildFilters();setVer();render()}catch(e){}})();
