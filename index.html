@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- Genova Stage - versione v2.3 (da v2.2: film mostrati anche con orari di uno o due giorni fa, indicando la data; ogni cinema apre il proprio sito, o Google Maps se il sito è condiviso) (da v2.1: schede cinema con locandina intera a sinistra e titolo leggibile, orari sotto) (da v2.0: film in sala oggi con locandine e orari cliccabili, letti ogni notte da CineMap) (da v1.9: nuova scheda Cinema con elenco sale e link alla programmazione di oggi) (da v1.8: il pulsante biglietti porta alla pagina dello spettacolo, o a una ricerca dello spettacolo se il link preciso non c'è; link al sito del teatro a parte) (da v1.7: filtro per genere comicità/musical/opera/ecc, filtri che si aggiornano con i dati nuovi, intestazione non fissa) (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
+<!-- Genova Stage - versione v2.4 (da v2.3: per gli spettacoli già iniziati la data parte da oggi e si legge "fino al…"; nessuna data passata nelle schede) (da v2.2: film mostrati anche con orari di uno o due giorni fa, indicando la data; ogni cinema apre il proprio sito, o Google Maps se il sito è condiviso) (da v2.1: schede cinema con locandina intera a sinistra e titolo leggibile, orari sotto) (da v2.0: film in sala oggi con locandine e orari cliccabili, letti ogni notte da CineMap) (da v1.9: nuova scheda Cinema con elenco sale e link alla programmazione di oggi) (da v1.8: il pulsante biglietti porta alla pagina dello spettacolo, o a una ricerca dello spettacolo se il link preciso non c'è; link al sito del teatro a parte) (da v1.7: filtro per genere comicità/musical/opera/ecc, filtri che si aggiornano con i dati nuovi, intestazione non fissa) (da v1.6: aggiunti 10 eventi Teatro Govi e Teatro Verdi) (da v1.5: legge events-data.json online, aggiornabile senza toccare la pagina) (da v1.4: aggiunti Carlo Felice completo, Teatro Nazionale completo, Tosse, concerti; avviso se i dati sono vecchi) (da v1.3: Politeama rifatto dal programma ufficiale aggiornato al 6/11/2026, con prezzi) (da v1.2: elenco eventi ricontrollato e ampliato a 55 eventi, date automatiche, rimossi eventi non confermati) (da v1.1: supporto locandine opzionali con campo img, fallback automatico al blocco data) (da v1.0: dati inline, niente risorse esterne, filtri corretti, .ics valido, filtro Teatro/Concerti) -->
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Genova Stage v2.3</title>
+<title>Genova Stage v2.4</title>
 <style>
 :root{--bg:#0e1a2b;--card:#16263b;--card2:#1d3150;--gold:#d4af37;--gold2:#f0dc8c;--txt:#f3f5f8;--dim:#9fb0c6;--line:#2a3f5e}
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
@@ -369,11 +369,12 @@ function render(){
     (e.a+" "+e.t+" "+e.v).toLowerCase().includes(q));
   $("count").textContent=list.length+(list.length===1?" evento":" eventi");
   $("grid").innerHTML=list.length?list.map(({e,i})=>{
-    const dd=e.s.split("-");
+    const ini=e.s<today?today:e.s, dd=ini.split("-");
+    const dataTxt=e.s<today?"Fino al "+fmt(e.e,e.e):e.d;
     return `<div class="card">${e.img?`<div class="poster"><img src="${esc(e.img)}" alt="Locandina ${esc(e.a)}" loading="lazy" onerror="this.parentNode.remove()"></div>`:""}<div class="top"><div class="dt"><b>${+dd[2]}</b><span>${MESI[+dd[1]-1]}</span></div>
     <div><div class="tag ${e.c==="concerto"?"c":""}">${esc(e.k)}</div><div class="art">${esc(e.a)}</div></div></div>
     <div class="body">${e.t?`<div class="ti">${esc(e.t)}</div>`:""}<div class="ve">📍 ${esc(e.v)}</div>
-    <div class="ve">${esc(e.d)}</div>${e.p?`<div class="pr">${esc(e.p)}</div>`:""}
+    <div class="ve">${esc(dataTxt)}</div>${e.p?`<div class="pr">${esc(e.p)}</div>`:""}
     <button class="btn" style="margin-top:10px" data-i="${i}">Info &amp; Prezzi</button></div></div>`}).join("")
     :'<div class="empty">Nessun evento trovato. Prova a cambiare ricerca o filtro.</div>';
 }
@@ -381,7 +382,7 @@ function openM(i){
   sel=EVENTS[i];
   $("mPoster").innerHTML=sel.img?`<div class="mposter"><img src="${esc(sel.img)}" alt="Locandina" onerror="this.parentNode.remove()"></div>`:"";
   $("mTag").textContent=sel.k;$("mArt").textContent=sel.a;$("mTit").textContent=sel.t;
-  $("mVen").textContent="📍 "+sel.v+", Genova";$("mDat").textContent=sel.d;
+  $("mVen").textContent="📍 "+sel.v+", Genova";$("mDat").textContent=sel.s<today?"Fino al "+fmt(sel.e,sel.e):sel.d;
   $("mPre").textContent=sel.p?"Prezzo: "+sel.p:"Prezzo: vedi sito ufficiale";$("mDes").textContent=sel.x||"";const preciso=EVENTS.filter(x=>x.u===sel.u).length<=2;
   $("mLink").href=preciso?sel.u:"https://www.google.com/search?q="+encodeURIComponent(sel.a+" "+sel.v+" biglietti");
   $("mLink").textContent=preciso?"Pagina dello spettacolo e biglietti":"Cerca biglietti: "+sel.a;
@@ -409,7 +410,7 @@ $("modal").addEventListener("click",e=>{if(e.target.id==="modal")$("modal").styl
 $("ics").onclick=ics;
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;gen=b.dataset.g;buildFilters();render()});
 let UPDATED="2026-11-07";const UPDATE_URL="events-data.json";
-function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri, Concerti & Cinema · v2.3 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
+function setVer(){const age=Math.floor((new Date(today)-new Date(UPDATED))/864e5);$("ver").textContent="Teatri, Concerti & Cinema · v2.4 · dati del "+UPDATED.split("-").reverse().join("/")+(age>14?" · ⚠ elenco vecchio di "+age+" giorni, controlla sui siti":"")}
 setVer();render();
 // AGGIORNAMENTO ONLINE: a ogni apertura la pagina scarica events-data.json (nella stessa cartella). Se non c'è internet o il file manca, usa i dati incorporati qui sopra.
 (async()=>{try{const x=await fetch(UPDATE_URL,{cache:"no-store"});if(!x.ok)return;const j=await x.json(),L=Array.isArray(j)?j:j.events;if(j&&j.cinema)CIN=j.cinema;if(!Array.isArray(L)||!L.length)return;EVENTS.length=0;L.forEach(e=>{e.e=e.e||e.s;e.d=e.d||fmt(e.s,e.e);EVENTS.push(e)});EVENTS.sort((a,b)=>a.s<b.s?-1:1);if(j.updated)UPDATED=j.updated;buildFilters();setVer();render()}catch(e){}})();
