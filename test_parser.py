@@ -109,4 +109,17 @@ cm = A.parse_cinemap("<script>self.__next_f.push([1," + json.dumps("5:[" + json.
 f0 = cm["films"][0]
 assert cm["data"] == "2026-11-08" and f0["t"] == "Digger" and f0["p"].endswith("/a.jpg")
 assert [(o["h"], o["l"], o["f"]) for o in f0["c"][0]["o"]] == [("16:00","IT","IMAX"),("21:15","VOS","")]
+import shutil
+os.chdir(tempfile.mkdtemp())
+cin = {"films": [{"t": "Digger", "p": "https://image.tmdb.org/t/p/w342/a.jpg"}, {"t": "Film Rotto", "p": "https://x/b.jpg"}]}
+def _fake(u, binario=False):
+    if "a.jpg" in u: return b"0" * 3000
+    raise OSError("404")
+A.get = _fake
+A.scarica_locandine(cin)
+assert cin["films"][0]["p"] == "locandine-cinema/digger.jpg" and os.path.exists("locandine-cinema/digger.jpg")
+assert cin["films"][1]["p"] == "https://x/b.jpg"
+open("locandine-cinema/vecchio.jpg", "w").write("x")
+A.scarica_locandine(cin)
+assert not os.path.exists("locandine-cinema/vecchio.jpg")
 print("TUTTI I TEST OK:", len(n), "Nazionale,", len(c), "Carlo Felice,", len(g), "GOG,", len(t), "Tosse,", len(p), "Politeama")

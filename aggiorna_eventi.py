@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# aggiorna_eventi.py v1.4 (aggiunge i film in sala oggi a Genova, da CineMap) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
+# aggiorna_eventi.py v1.5 (scarica le locandine dei film in sala nella cartella locandine-cinema/) - Legge i siti dei teatri e aggiorna events-data.json (solo libreria standard Python)
 # Regola di sicurezza: se un sito cambia e il programma legge troppo poco, i dati vecchi di quel teatro restano.
 from zoneinfo import ZoneInfo
 import os, unicodedata, json, re, sys, subprocess, tempfile, collections, datetime as dt, urllib.request, urllib.parse
@@ -249,6 +249,28 @@ def parse_cinemap(html):
     out.sort(key=lambda f: -sum(len(c["o"]) for c in f["c"]))
     return {"data": data.isoformat(), "fonte": "CineMap", "films": out}
 
+def scarica_locandine(cin, cartella="locandine-cinema"):
+    """Scarica ogni locandina in un file dentro il repository. Se un download fallisce, resta il link online."""
+    if not cin or not cin.get("films"): return
+    os.makedirs(cartella, exist_ok=True)
+    ok = 0
+    for f in cin["films"]:
+        url = f.get("p") or ""
+        if not url.startswith("http"): continue
+        nome = os.path.join(cartella, slug(f["t"]) + ".jpg")
+        try:
+            b = get(url, binario=True)
+            if len(b) < 2000: raise ValueError("file troppo piccolo")
+            with open(nome, "wb") as out: out.write(b)
+            f["p"] = nome; ok += 1
+        except Exception as x:
+            print(f"[locandina] {f['t']}: {x}")
+    # elimina le locandine di film non più in sala
+    attivi = {slug(f["t"]) + ".jpg" for f in cin["films"]}
+    for n in os.listdir(cartella):
+        if n.endswith(".jpg") and n not in attivi: os.remove(os.path.join(cartella, n))
+    print(f"[locandine] scaricate {ok} su {len(cin['films'])}")
+
 # ---------- rete ----------
 def get(url, binario=False):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
@@ -386,7 +408,7 @@ def main():
     if not solo_norm:
         try:
             nuovo = parse_cinemap(get("https://www.cinemap.it/genova"))
-            if nuovo and len(nuovo["films"]) >= 5: cin = nuovo; print(f"[cinema] ok: {len(nuovo['films'])} film del {nuovo['data']}")
+            if nuovo and len(nuovo["films"]) >= 5: scarica_locandine(nuovo); cin = nuovo; print(f"[cinema] ok: {len(nuovo['films'])} film del {nuovo['data']}")
             else: print("[cinema] pochi dati: tengo i vecchi")
         except Exception as x: print(f"[cinema] ERRORE: {x}")
     limite = (TODAY - dt.timedelta(days=2)).isoformat()
