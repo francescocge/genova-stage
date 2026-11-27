@@ -1,0 +1,4180 @@
+{
+ "updated": "2026-11-07",
+ "version": "auto",
+ "fonti": {},
+ "events": [
+  {
+   "a": "Il donatore",
+   "t": "Sala Dino Campana",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-03",
+   "e": "2026-11-08",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "3 - 8 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Mio padre è Sylvester Stallone",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-03",
+   "e": "2026-11-08",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "3 - 8 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Prima del Temporale",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-05",
+   "e": "2026-11-08",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "5 - 8 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Luca Bizzarri",
+   "t": "Non hanno un amico dubbio",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-06",
+   "e": "2026-11-07",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 25 € a 31 €",
+   "d": "6 - 7 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "AlJazzeera",
+   "t": "Jazz, La Claque",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-07",
+   "e": "2026-11-07",
+   "c": "concerto",
+   "k": "Jazz",
+   "p": "",
+   "d": "7 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Nasi rossi",
+   "t": "Foyer Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-07",
+   "e": "2026-11-07",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "7 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Peppe Iodice",
+   "t": "Ho visto Maradona · Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-07",
+   "e": "2026-11-07",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "",
+   "d": "7 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "I concerti a cinque di Vivaldi",
+   "t": "Primo foyer",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-08",
+   "e": "2026-11-08",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "8 Novembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Kaguya-Hime",
+   "t": "Per famiglie",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-08",
+   "e": "2026-11-09",
+   "c": "teatro",
+   "k": "Famiglie",
+   "p": "",
+   "d": "8 - 9 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Ambra Angiolini",
+   "t": "La misteriosa scomparsa di W",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-10",
+   "e": "2026-11-11",
+   "c": "teatro",
+   "k": "Prosa",
+   "p": "Da 31 € a 37 €",
+   "d": "10 - 11 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Orizzonti romantici",
+   "t": "Concerto a Camogli",
+   "v": "Teatro Sociale di Camogli",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-10",
+   "e": "2026-11-10",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "10 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "Starman",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-10",
+   "e": "2026-11-15",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "10 - 15 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "La sera della prima · Monica Guerritore",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-11",
+   "e": "2026-11-11",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "11 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Madri",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-12",
+   "e": "2026-11-13",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "12 - 13 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Marco Goldin",
+   "t": "Monet. Una vita a colori",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-12",
+   "e": "2026-11-12",
+   "c": "teatro",
+   "k": "Spettacolo",
+   "p": "Da 34,50 € a 43,70 €",
+   "d": "12 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Max Gazzè",
+   "t": "L'ornamento delle cose secondarie",
+   "v": "Teatro Verdi",
+   "u": "https://www.ticketone.it/city/genova-224/concerti-55/",
+   "s": "2026-11-12",
+   "e": "2026-11-14",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "12 - 14 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "What the body does not remember",
+   "t": "Danza, Wim Vandekeybus",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-12",
+   "e": "2026-11-12",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "12 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Marco Paolini",
+   "t": "Bestiario idrico",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-13",
+   "e": "2026-11-13",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 29 € a 34 €",
+   "d": "13 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Il grande inganno",
+   "t": "Danza",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-14",
+   "e": "2026-11-14",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "14 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Kento",
+   "t": "La cella di fronte",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2026-11-14",
+   "e": "2026-11-14",
+   "c": "teatro",
+   "k": "Spettacolo",
+   "p": "",
+   "d": "14 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "La diva del Bataclan",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-14",
+   "e": "2026-11-14",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "14 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Marco Paolini",
+   "t": "Dov'è il Po?",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-14",
+   "e": "2026-11-14",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 29 € a 34 €",
+   "d": "14 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Wanderer Trio",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-16",
+   "e": "2026-11-16",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "16 Novembre 2026",
+   "src": "gog"
+  },
+  {
+   "a": "Accabadora",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-17",
+   "e": "2026-11-17",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "17 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Arisa",
+   "t": "Live Tour",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-17",
+   "e": "2026-11-17",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 51,75 € a 69 €",
+   "d": "17 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Ingeborg und ich! ... e la civetta",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-17",
+   "e": "2026-11-17",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "17 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Lu santo Jullare Francesco",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-18",
+   "e": "2026-11-22",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "18 - 22 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Mario Calabresi",
+   "t": "Anni Settanta. Terrore e diritti",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-18",
+   "e": "2026-11-18",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 31 € a 37 €",
+   "d": "18 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Mi manca Van Gogh",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-18",
+   "e": "2026-11-18",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "18 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Suona Buena Vista Social Club",
+   "t": "Temporary Band",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2026-11-18",
+   "e": "2026-11-18",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "18 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "People, Places & Things",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-19",
+   "e": "2026-11-22",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "19 - 22 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Shiva",
+   "t": "",
+   "v": "Palateknoship",
+   "u": "https://www.ticketone.it/city/genova-224/concerti-55/",
+   "s": "2026-11-19",
+   "e": "2026-11-19",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "19 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "Advienne que pourra",
+   "t": "",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-20",
+   "e": "2026-11-20",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "20 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "I Capuleti e i Montecchi",
+   "t": "Bellini",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-20",
+   "e": "2026-11-27",
+   "c": "teatro",
+   "k": "Opera",
+   "p": "",
+   "d": "20 - 27 Novembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Indovina chi viene a cena",
+   "t": "Con Cesare Bocci e Vittoria Belvedere",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-20",
+   "e": "2026-11-21",
+   "c": "teatro",
+   "k": "Commedia",
+   "p": "Da 38 € a 43,70 €",
+   "d": "20 - 21 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Mare di ruggine",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-20",
+   "e": "2026-11-22",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "20 - 22 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "The Jury Experience",
+   "t": "Spettacolo interattivo, più repliche",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2026-11-20",
+   "e": "2027-01-29",
+   "c": "teatro",
+   "k": "Spettacolo",
+   "p": "Da 23,00 €",
+   "d": "20 Novembre 2026 - 29 Gennaio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Contro il sole",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-21",
+   "e": "2026-11-21",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "21 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Fauré Quartet",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-23",
+   "e": "2026-11-23",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "23 Novembre 2026",
+   "src": "gog"
+  },
+  {
+   "a": "Geppi Cucciari",
+   "t": "Perfetta",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-23",
+   "e": "2026-11-24",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 32 € a 38 €",
+   "d": "23 - 24 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "L'alba dopo la fine della Storia",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-24",
+   "e": "2026-11-25",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "24 - 25 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Scherzo, malgrado tutto",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-24",
+   "e": "2026-11-25",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "24 - 25 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Coez",
+   "t": "From The Rooftop",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-26",
+   "e": "2026-11-26",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "26 Novembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Crave",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-26",
+   "e": "2026-11-26",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "26 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "L'occhio del lupo",
+   "t": "Daniel Pennac",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-11-26",
+   "e": "2026-11-29",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "26 - 29 Novembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Back to Hawkins",
+   "t": "Live show · Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-27",
+   "e": "2026-11-27",
+   "c": "teatro",
+   "k": "Spettacolo",
+   "p": "",
+   "d": "27 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "Emigranti",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-11-27",
+   "e": "2026-11-29",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "27 - 29 Novembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Pirati dei Caruggi",
+   "t": "Sert du Soleil",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-27",
+   "e": "2026-11-29",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 31 € a 37 €",
+   "d": "27 - 29 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Margherita Hack",
+   "t": "Una donna piena di cielo",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2026-11-28",
+   "e": "2026-11-28",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "28 Novembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "Mario Biondi",
+   "t": "Tour 2026",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-28",
+   "e": "2026-11-28",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "28 Novembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Lucas Debargue",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-11-30",
+   "e": "2026-11-30",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "30 Novembre 2026",
+   "src": "gog"
+  },
+  {
+   "a": "Stefano Rapone",
+   "t": "Comico dai ruoli mai principali",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-11-30",
+   "e": "2026-11-30",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 27,60 € a 36,80 €",
+   "d": "30 Novembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "La Cena dei Cretini",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-01",
+   "e": "2026-12-03",
+   "c": "teatro",
+   "k": "Commedia",
+   "p": "30 €",
+   "d": "1 - 3 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Morte accidentale di un anarchico",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-01",
+   "e": "2026-12-03",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "1 - 3 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Congiura",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-02",
+   "e": "2026-12-03",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "2 - 3 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Hourvari",
+   "t": "Circo a Voltri",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it",
+   "s": "2026-12-02",
+   "e": "2026-12-04",
+   "c": "teatro",
+   "k": "Circo",
+   "p": "",
+   "d": "2 - 4 Dicembre 2026",
+   "src": "tosse"
+  },
+  {
+   "a": "Lo Schiaccianoci",
+   "t": "Astana Opera",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-12-03",
+   "e": "2026-12-06",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "3 - 6 Dicembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Equus",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-04",
+   "e": "2026-12-12",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "4 - 12 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Katia Follesa",
+   "t": "No vabbè mi adoro",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-04",
+   "e": "2026-12-05",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 46 € a 53 €",
+   "d": "4 - 5 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Solitarium",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-05",
+   "e": "2026-12-05",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "5 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Soweto Gospel Choir",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-06",
+   "e": "2026-12-06",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 34,50 € a 56,35 €",
+   "d": "6 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Genesis",
+   "t": "One Night with the Orchestra",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-10",
+   "e": "2026-12-10",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 59 € a 79 €",
+   "d": "10 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Fire of Georgia",
+   "t": "Royal National Ballet of Georgia",
+   "v": "Teatro Verdi",
+   "u": "https://www.ticketone.it/city/genova-224/concerti-55/",
+   "s": "2026-12-11",
+   "e": "2026-12-11",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "11 Dicembre 2026",
+   "src": "manuale"
+  },
+  {
+   "a": "Fratello Sole, Sorella Luna",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-11",
+   "e": "2026-12-12",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 34,50 € a 46 €",
+   "d": "11 - 12 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Giselle",
+   "t": "Astana Opera",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-12-11",
+   "e": "2026-12-13",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "11 - 13 Dicembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Lo Zar · Stefano Massini",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-11",
+   "e": "2026-12-13",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "11 - 13 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Vizita",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-11",
+   "e": "2026-12-12",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "11 - 12 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "100 Miles to go",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-13",
+   "e": "2026-12-13",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "13 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Alessandro Cattelan",
+   "t": "Benvenuto nell'Ai!",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-15",
+   "e": "2026-12-15",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 51,75 € a 78,20 €",
+   "d": "15 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Assassinio sull'Orient Express",
+   "t": "Con Claudio Gregori",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-17",
+   "e": "2026-12-19",
+   "c": "teatro",
+   "k": "Prosa",
+   "p": "Da 38 € a 45 €",
+   "d": "17 - 19 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Il berretto a sonagli · Silvio Orlando",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-17",
+   "e": "2026-12-20",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "17 - 20 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Candlelight: Disney Canzoni d'Amore",
+   "t": "Più date",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2026-12-18",
+   "e": "2027-01-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 23,00 €",
+   "d": "18 Dicembre 2026 - 22 Gennaio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Candlelight: Tributo a Michael Jackson",
+   "t": "Più date",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2026-12-18",
+   "e": "2027-02-26",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 23,00 €",
+   "d": "18 Dicembre 2026 - 26 Febbraio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Merry Christmas",
+   "t": "Coro di voci bianche",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-12-20",
+   "e": "2026-12-20",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "20 Dicembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "A Christmas Carol",
+   "t": "Musical",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-21",
+   "e": "2026-12-22",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 29 € a 49 €",
+   "d": "21 - 22 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Alexandra Dovgan",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-12-21",
+   "e": "2026-12-21",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "21 Dicembre 2026",
+   "src": "gog"
+  },
+  {
+   "a": "Concerto di Natale",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2026-12-23",
+   "e": "2026-12-23",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "23 Dicembre 2026",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Harlem Gospel Choir",
+   "t": "Whitney & Tina",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-23",
+   "e": "2026-12-23",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 34,50 € a 40 €",
+   "d": "23 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Bruciabaracche",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-26",
+   "e": "2026-12-27",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 31 € a 37 €",
+   "d": "26 - 27 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Lento e violento",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-28",
+   "e": "2026-12-28",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "28 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "La strana coppia",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-29",
+   "e": "2027-01-06",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "29 Dicembre 2026 - 6 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Le Dieu du carnage",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-30",
+   "e": "2027-01-06",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "30 Dicembre 2026 - 6 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Sweet Molotov",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2026-12-30",
+   "e": "2026-12-30",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "30 Dicembre 2026",
+   "src": "nazionale"
+  },
+  {
+   "a": "Maurizio Lastrico",
+   "t": "Capodanno (ore 19:30 e 22:30)",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2026-12-31",
+   "e": "2026-12-31",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 46 € a 61 €",
+   "d": "31 Dicembre 2026",
+   "src": "politeama"
+  },
+  {
+   "a": "Gran Concerto di Capodanno",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-01-01",
+   "e": "2027-01-01",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "1 Gennaio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Maurizio Lastrico",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-02",
+   "e": "2027-01-05",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 34,50 € a 40 €",
+   "d": "2 - 5 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Oscar",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-07",
+   "e": "2027-01-10",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "7 - 10 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Il lago dei cigni",
+   "t": "Arena di Verona",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-01-08",
+   "e": "2027-01-10",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "8 - 10 Gennaio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Massimo Ranieri",
+   "t": "Tutti i sogni ancora in volo",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-09",
+   "e": "2027-01-09",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 51,50 € a 74,50 €",
+   "d": "9 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "POeSIA (e l'invisibile)",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-09",
+   "e": "2027-01-09",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "9 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Massimo Recalcati",
+   "t": "Genitori oggi",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-11",
+   "e": "2027-01-11",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "40 €",
+   "d": "11 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Una delle ultime sere di Carnovale",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-13",
+   "e": "2027-01-17",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "13 - 17 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Candlelight: Il meglio di Ludovico Einaudi",
+   "t": "",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2027-01-15",
+   "e": "2027-01-15",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 23,00 €",
+   "d": "15 Gennaio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Marta e Gianluca",
+   "t": "Io e Gianlu",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-15",
+   "e": "2027-01-16",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 32 € a 39 €",
+   "d": "15 - 16 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Peace on earth",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-17",
+   "e": "2027-01-17",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "17 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Ettore Pagano e Maximilian Kromer",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-01-18",
+   "e": "2027-01-18",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "18 Gennaio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "L'ultimo nastro di Krapp / Press conference",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-20",
+   "e": "2027-01-24",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "20 - 24 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Aggiungi un posto a tavola",
+   "t": "Con Giovanni Scifoni",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-22",
+   "e": "2027-01-24",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 40 € a 63 €",
+   "d": "22 - 24 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Candlelight: I classici del rock",
+   "t": "",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2027-01-22",
+   "e": "2027-01-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 23,00 €",
+   "d": "22 Gennaio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Erano tutti miei figli",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-22",
+   "e": "2027-01-24",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "22 - 24 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Pagliacci",
+   "t": "Leoncavallo",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-01-22",
+   "e": "2027-01-31",
+   "c": "teatro",
+   "k": "Opera",
+   "p": "",
+   "d": "22 - 31 Gennaio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Il giardiniere dei sogni",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-23",
+   "e": "2027-01-23",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "23 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Nelson Goerner",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-01-25",
+   "e": "2027-01-25",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "25 Gennaio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Fabio Concato",
+   "t": "Altro di me",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-26",
+   "e": "2027-01-26",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 29 € a 50 €",
+   "d": "26 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Arianna Porcelli Safonov",
+   "t": "Odiario",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-27",
+   "e": "2027-01-27",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 25 € a 31 €",
+   "d": "27 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Ahi Maria!",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-28",
+   "e": "2027-01-31",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "28 - 31 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Beethoven 200 - 1",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-01-28",
+   "e": "2027-01-28",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "28 Gennaio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Non si sa come",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-01-28",
+   "e": "2027-01-31",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "28 - 31 Gennaio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Stefania Andreoli",
+   "t": "La mente in scena",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-01-29",
+   "e": "2027-01-29",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 35 € a 46 €",
+   "d": "29 Gennaio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Ilya Gringolts e Peter Laul",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-02-01",
+   "e": "2027-02-01",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "1 Febbraio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Deledda",
+   "t": "Concerto sinfonico",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-02-02",
+   "e": "2027-02-02",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "2 Febbraio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Platonov",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-03",
+   "e": "2027-02-06",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "3 - 6 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Quartett",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-04",
+   "e": "2027-02-07",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "4 - 7 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Temporary Band",
+   "t": "Suona Lucio Battisti",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2027-02-05",
+   "e": "2027-02-05",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "5 Febbraio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Millemila baci",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-06",
+   "e": "2027-02-06",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "6 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Günther Groissböck e Julius Drake",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-02-08",
+   "e": "2027-02-08",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "8 Febbraio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Il medico dei maiali",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-09",
+   "e": "2027-02-11",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "9 - 11 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Maccio Capatonda",
+   "t": "Spettacolo teatrale",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-02-09",
+   "e": "2027-02-09",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 40 € a 55 €",
+   "d": "9 Febbraio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Roberto Saviano",
+   "t": "Quel che resta di me",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-02-11",
+   "e": "2027-02-11",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 40 € a 45 €",
+   "d": "11 Febbraio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Poveri Cristi",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-12",
+   "e": "2027-02-13",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "12 - 13 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Il Matricomio",
+   "t": "Non ti prometto niente",
+   "v": "Teatro Govi",
+   "u": "https://www.teatro.it/spettacoli/genova/govi/biglietti",
+   "s": "2027-02-13",
+   "e": "2027-02-13",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "",
+   "d": "13 Febbraio 2027",
+   "src": "manuale"
+  },
+  {
+   "a": "Paolo Kessisoglu",
+   "t": "Sfidati di me",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-02-13",
+   "e": "2027-02-13",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29 € a 34,50 €",
+   "d": "13 Febbraio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Eleazaro Rossi",
+   "t": "Kamikaze",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-02-15",
+   "e": "2027-02-15",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29,90 € a 41,90 €",
+   "d": "15 Febbraio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "La guerra com'è",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-16",
+   "e": "2027-02-17",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "16 - 17 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Antonio Ornano",
+   "t": "Il bar sotto il mare",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-02-18",
+   "e": "2027-02-20",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 31 € a 37 €",
+   "d": "18 - 20 Febbraio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Edipus",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-18",
+   "e": "2027-02-21",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "18 - 21 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "La reginetta di Leenane",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-18",
+   "e": "2027-02-21",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "18 - 21 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "L'italiana in Algeri",
+   "t": "Rossini",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-02-19",
+   "e": "2027-02-28",
+   "c": "teatro",
+   "k": "Opera",
+   "p": "",
+   "d": "19 - 28 Febbraio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "A come Alice",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-20",
+   "e": "2027-02-20",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "20 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Brasil!",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-21",
+   "e": "2027-02-21",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "21 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "András Schiff",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-02-22",
+   "e": "2027-02-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "22 Febbraio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Fedra",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-23",
+   "e": "2027-02-28",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "23 - 28 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Slava's SnowShow",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-02-24",
+   "e": "2027-02-28",
+   "c": "teatro",
+   "k": "Spettacolo",
+   "p": "Da 34,50 € a 55 €",
+   "d": "24 - 28 Febbraio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Beethoven 200 - 2",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-02-25",
+   "e": "2027-02-25",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "25 Febbraio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Quinto: non uccidere",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-02-25",
+   "e": "2027-02-28",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "25 - 28 Febbraio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Francesco Piccolo",
+   "t": "Cosa sono le nuvole. Gli ultimi anni di Totò",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-02",
+   "e": "2027-03-02",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 29 € a 34,50 €",
+   "d": "2 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "M/T Moby Prince 3.0",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-02",
+   "e": "2027-03-03",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "2 - 3 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Beethoven 200 - 3",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-03-03",
+   "e": "2027-03-03",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "3 Marzo 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Gioele Dix",
+   "t": "Arrivato a questo punto",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-03",
+   "e": "2027-03-03",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29 € a 34,50 €",
+   "d": "3 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Dopo la prova",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-04",
+   "e": "2027-03-07",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "4 - 7 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Federico Buffa",
+   "t": "Otto infinito",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-04",
+   "e": "2027-03-04",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 34,50 € a 43,70 €",
+   "d": "4 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "I due gemelli veneziani",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-04",
+   "e": "2027-03-21",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "4 - 21 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Pink Floyd Legend",
+   "t": "The Dark Side of the Moon",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-05",
+   "e": "2027-03-06",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 35 € a 50 €",
+   "d": "5 - 6 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Elio",
+   "t": "La rivalutazione della tristezza",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-09",
+   "e": "2027-03-09",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 34,50 € a 40 €",
+   "d": "9 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Lettere a un giovane poeta",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-10",
+   "e": "2027-03-12",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "10 - 12 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Frida Opera Musical",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-12",
+   "e": "2027-03-14",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 46 € a 69 €",
+   "d": "12 - 14 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Sconcerto d'amore",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-13",
+   "e": "2027-03-13",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "13 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Too Late",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-13",
+   "e": "2027-03-14",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "13 - 14 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Nadir",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-14",
+   "e": "2027-03-14",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "14 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Virginia Raffaele",
+   "t": "Bancàl",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-16",
+   "e": "2027-03-20",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 38 € a 60 €",
+   "d": "16 - 20 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Gran Bazar",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-18",
+   "e": "2027-03-21",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "18 - 21 Marzo 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Turandot",
+   "t": "Puccini",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-03-19",
+   "e": "2027-03-25",
+   "c": "teatro",
+   "k": "Opera",
+   "p": "",
+   "d": "19 - 25 Marzo 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Alexander Gadjiev",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-03-22",
+   "e": "2027-03-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "22 Marzo 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Voglio vederti danzare",
+   "t": "Omaggio a Franco Battiato",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-22",
+   "e": "2027-03-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 35 € a 50 €",
+   "d": "22 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Daniele Tinti",
+   "t": "Pesche dure",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-23",
+   "e": "2027-03-23",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 26,45 € a 34,50 €",
+   "d": "23 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Paolo Rossi e Bebo Storti",
+   "t": "L'opera del delinquente",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-24",
+   "e": "2027-03-24",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29 € a 34,50 €",
+   "d": "24 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Ma a che serve la luce? / Le ceneri di Gramsci",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-03-31",
+   "e": "2027-04-01",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "31 Marzo - 1 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "PanPers",
+   "t": "Terapia di coppia",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-03-31",
+   "e": "2027-03-31",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29 € a 34,50 €",
+   "d": "31 Marzo 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Preghiera",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-02",
+   "e": "2027-04-02",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "2 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Sergio Bernal Dance Company",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-04-02",
+   "e": "2027-04-04",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "",
+   "d": "2 - 4 Aprile 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Agitazione",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-03",
+   "e": "2027-04-10",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "3 - 10 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Andrea Pennacchi",
+   "t": "Shakespeare and me",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-03",
+   "e": "2027-04-03",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 29 € a 34,50 €",
+   "d": "3 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Eleazaro Rossi",
+   "t": "Kamikaze (nuova data)",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-05",
+   "e": "2027-04-05",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29,90 € a 41,90 €",
+   "d": "5 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Aldo Cazzullo",
+   "t": "Il genio italiano",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-06",
+   "e": "2027-04-06",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 34,50 € a 40 €",
+   "d": "6 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Romeo & Juliet",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-07",
+   "e": "2027-04-09",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "7 - 9 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Il lago dei cigni",
+   "t": "Balletto di Milano",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-08",
+   "e": "2027-04-08",
+   "c": "teatro",
+   "k": "Danza",
+   "p": "Da 39 € a 50 €",
+   "d": "8 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Scheda bianca",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-08",
+   "e": "2027-04-11",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "8 - 11 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Oblivion",
+   "t": "Win for life",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-09",
+   "e": "2027-04-10",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 29 € a 34,50 €",
+   "d": "9 - 10 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "In...segnami il silenzio",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-10",
+   "e": "2027-04-10",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "10 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Clayton Stephenson",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-04-12",
+   "e": "2027-04-12",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "12 Aprile 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Giovanni Allevi",
+   "t": "Piano Solo Tour 2027",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-14",
+   "e": "2027-04-14",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 36,50 € a 59,50 €",
+   "d": "14 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "L'ultima domenica di agosto",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-15",
+   "e": "2027-04-18",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "15 - 18 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Le baccanti",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-15",
+   "e": "2027-04-18",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "15 - 18 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Evgenij Onegin",
+   "t": "Čajkovskij",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-04-16",
+   "e": "2027-04-21",
+   "c": "teatro",
+   "k": "Opera",
+   "p": "",
+   "d": "16 - 21 Aprile 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Fagioli",
+   "t": "Parco di Pegli",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-17",
+   "e": "2027-04-17",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "17 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "VOCES8",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-04-19",
+   "e": "2027-04-19",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "19 Aprile 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Giordana Angi",
+   "t": "Piano piano Live Tour",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-20",
+   "e": "2027-04-20",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 34,50 € a 40 €",
+   "d": "20 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Amleto",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-21",
+   "e": "2027-04-25",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "21 - 25 Aprile 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Angelo Duro",
+   "t": "Chiedo scusa a tutti",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-21",
+   "e": "2027-04-22",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 40 € a 55 €",
+   "d": "21 - 22 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Alinde Quintet",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-04-26",
+   "e": "2027-04-26",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "26 Aprile 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Osteria Giacobazzi",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-27",
+   "e": "2027-04-28",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 42 € a 47 €",
+   "d": "27 - 28 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Il marabù",
+   "t": "Teatro Duse",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-04-28",
+   "e": "2027-05-09",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "28 Aprile - 9 Maggio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Stefano Nazzi",
+   "t": "Indagini Live 2027",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-04-29",
+   "e": "2027-04-29",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 35,60 € a 44,80 €",
+   "d": "29 Aprile 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Verdi Requiem",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-04-29",
+   "e": "2027-04-29",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "29 Aprile 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Grigory Sokolov",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-05-03",
+   "e": "2027-05-03",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "3 Maggio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Canto alla balena bianca",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-05-05",
+   "e": "2027-05-05",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "5 Maggio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Gianrico Carofiglio",
+   "t": "Il mistero della stupidità",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-05-05",
+   "e": "2027-05-05",
+   "c": "teatro",
+   "k": "Racconto",
+   "p": "Da 37 € a 42,50 €",
+   "d": "5 Maggio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Alessandro Bergonzoni",
+   "t": "Arrivano i Dunque",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-05-06",
+   "e": "2027-05-06",
+   "c": "teatro",
+   "k": "Comicità",
+   "p": "Da 29 € a 34,50 €",
+   "d": "6 Maggio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Tedesca",
+   "t": "Sala Mercato",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-05-06",
+   "e": "2027-05-08",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "6 - 8 Maggio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Ilya Gringolts e Peter Laul",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-05-10",
+   "e": "2027-05-10",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "10 Maggio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Barbare furie",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-05-11",
+   "e": "2027-05-16",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "11 - 16 Maggio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Dire Straits Reload",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-05-11",
+   "e": "2027-05-11",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 38 € a 49 €",
+   "d": "11 Maggio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Il ragazzo dai pantaloni rosa",
+   "t": "Il Musical",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-05-14",
+   "e": "2027-05-15",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 39,50 € a 55 €",
+   "d": "14 - 15 Maggio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Le nostre donne",
+   "t": "Bizzarri, Paci, Zavatteri",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-05-18",
+   "e": "2027-05-19",
+   "c": "teatro",
+   "k": "Commedia",
+   "p": "Da 31 € a 37 €",
+   "d": "18 - 19 Maggio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Acoustic Night 27",
+   "t": "Teatro Ivo Chiesa",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-05-20",
+   "e": "2027-05-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "20 - 22 Maggio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Notte prima degli esami",
+   "t": "",
+   "v": "Politeama Genovese",
+   "u": "https://www.politeamagenovese.it",
+   "s": "2027-05-20",
+   "e": "2027-05-22",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "Da 38 € a 45 €",
+   "d": "20 - 22 Maggio 2027",
+   "src": "politeama"
+  },
+  {
+   "a": "Nabucco",
+   "t": "Verdi",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-05-21",
+   "e": "2027-05-30",
+   "c": "teatro",
+   "k": "Opera",
+   "p": "",
+   "d": "21 - 30 Maggio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "CMR Big Band",
+   "t": "Teatro Modena",
+   "v": "Teatro Nazionale di Genova",
+   "u": "https://www.teatronazionalegenova.it",
+   "s": "2027-05-22",
+   "e": "2027-05-22",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "22 Maggio 2027",
+   "src": "nazionale"
+  },
+  {
+   "a": "Brooklyn Rider",
+   "t": "Stagione GOG",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-05-24",
+   "e": "2027-05-24",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "24 Maggio 2027",
+   "src": "gog"
+  },
+  {
+   "a": "Rosso Ferrari",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-05-27",
+   "e": "2027-05-27",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "27 Maggio 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Beethoven 200 - 4",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-06-04",
+   "e": "2027-06-04",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "4 Giugno 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Beethoven 200 - 5",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-06-10",
+   "e": "2027-06-10",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "",
+   "d": "10 Giugno 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "The Phantom of the Opera",
+   "t": "",
+   "v": "Teatro Carlo Felice",
+   "u": "https://www.carlofelice.it",
+   "s": "2027-06-17",
+   "e": "2027-06-20",
+   "c": "teatro",
+   "k": "Musical",
+   "p": "",
+   "d": "17 - 20 Giugno 2027",
+   "src": "carlofelice"
+  },
+  {
+   "a": "Claudio Baglioni",
+   "t": "La vita è adesso",
+   "v": "Arena del Mare Porto Antico",
+   "u": "https://www.ticketone.it/city/genova-224/venue/arena-mare-area-porto-antico-16501/",
+   "s": "2027-07-07",
+   "e": "2027-07-07",
+   "c": "concerto",
+   "k": "Concerto",
+   "p": "Da 75,00 € a 150,00 €",
+   "d": "7 Luglio 2027",
+   "src": "manuale"
+  }
+ ],
+ "cinema": {
+  "data": "2026-11-08",
+  "fonte": "CineMap",
+  "films": [
+   {
+    "t": "Se domani non torno",
+    "g": [
+     "Dramma"
+    ],
+    "d": 106,
+    "p": "https://image.tmdb.org/t/p/w342/cBzYad8BrcrlprHa17O4UDnACC1.jpg",
+    "x": "Giulia è la figlia ideale. Studia, disegna, sogna di vivere in una brughiera, colleziona scatole e regala sorrisi dolcissimi. Poi una sera scompare, inghiottita da una morte assurda: un femminicidio. Travolto dal dolore più atroce che un pa",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "13:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "14:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "15:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "17:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "20:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59530"
+       },
+       {
+        "h": "16:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59536"
+       },
+       {
+        "h": "19:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59537"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003580/59226"
+       }
+      ]
+     },
+     {
+      "n": "Cinema America",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/98315/d78deef9-a815-4355-927e-068ca35b9fdf#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/98315/f5934dc1-9f57-4dc8-90ec-501eb5fc34d9#theater-init"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/98315/1f97e4ed-296a-4dbd-8b5b-173c98c2b81e#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "17:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/9832_se-domani-non-torno"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/9832_se-domani-non-torno"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Dio ride",
+    "g": [
+     "Commedia",
+     "Dramma"
+    ],
+    "d": 114,
+    "p": "https://image.tmdb.org/t/p/w342/lzXRa7v32P7bX56Cgw7ydP1XFIq.jpg",
+    "x": "Nel cuore del ‘600, Frate Leopoldo da Casamacchia racconta il Vangelo con una gioia e una libertà mai viste prima. Mentre la Chiesa parla in latino, lui parla alla gente di un Dio vicino, capace di portare sollievo, speranza e persino di ri",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "12:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003797/59533"
+       }
+      ]
+     },
+     {
+      "n": "Cinema San Pietro",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sanpietro.ccgenova.18tickets.it/film/96698/99f8c02e-5723-4f39-8bec-f2c976fc6eb3#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sanpietro.ccgenova.18tickets.it/film/96698/c529749c-7755-4bf0-9784-cd451e988374#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96698/ac8347de-b0ef-415d-8a73-24196572b91b#theater-init"
+       },
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96698/cf653e3a-85a7-41f4-af76-112d4b87bde8#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96698/7eea584d-7e66-482c-b9eb-6ceae2cda0da#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "15:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/96698/e618e049-1873-4544-93cf-f45b77c5c035#theater-init"
+       },
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/96698/a7250994-9fe7-413d-a232-a5f4c053d6d1#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/96698/f05b9b9b-ac39-484c-93e4-b9765043b328#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "16:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "17:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10345_dio-ride"
+       },
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10345_dio-ride"
+       }
+      ]
+     },
+     {
+      "n": "Nuovo Cinema Palmaro",
+      "o": [
+       {
+        "h": "18:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/palmaro/titolo/564_dio-ride"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/palmaro/titolo/564_dio-ride"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Il gatto col cappello",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Avventura",
+     "Fantasy",
+     "Famiglia"
+    ],
+    "d": 91,
+    "p": "https://image.tmdb.org/t/p/w342/t7WBklMsn2rlzhcRLLzego99h1Y.jpg",
+    "x": "Scopri Il Gatto col Cappello come non l’hai mai visto prima! Dal meraviglioso e stravagante mondo di Dr. Seuss, Il Gatto col Cappello arriva per la prima volta sul grande schermo da protagonista di un film d’animazione: un’avventura epica, ",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "13:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "14:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10615_il-gatto-col-cappell"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10615_il-gatto-col-cappell"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/98183/76a00024-4040-432a-a9e0-bf3825606197#theater-init"
+       },
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/98183/893079d5-efc2-4554-9e87-f6ff69fa8d6e#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "15:35",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003165/59534"
+       },
+       {
+        "h": "17:55",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003165/59225"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Wild Horse Nine",
+    "g": [
+     "Commedia",
+     "Crime",
+     "Thriller"
+    ],
+    "d": 116,
+    "p": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
+    "x": "Cile, 1973. Chris e Lee sono due agenti della CIA distaccati in Sud America, costretti ad affrontare un complicato viaggio da Santiago all'Isola di Pasqua che metterà a dura prova la loro fiducia reciproca.",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:30",
+        "l": "VOS",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "15:20",
+        "l": "VOS",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "11:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003652/59529"
+       },
+       {
+        "h": "18:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003652/59540"
+       },
+       {
+        "h": "20:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003652/59532"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Corallo",
+      "o": [
+       {
+        "h": "16:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/98414/0845eaf3-ef80-4252-bd6e-af8a808ab58f#theater-init"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/98414/182a4866-91f0-41de-8861-3ce0e6a41dca#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/98415/e9bf4301-f1d1-49f8-b90d-3ecb8e90b178#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Un tranquillo funerale di famiglia",
+    "g": [
+     "Commedia"
+    ],
+    "d": 98,
+    "p": "https://image.tmdb.org/t/p/w342/iXtZ4Y28GTw1BJFHgcmHrICoyL1.jpg",
+    "x": "Nel giorno del funerale del patriarca della famiglia Mancuso, i due figli Daria e Riccardo si ritrovano a fare i conti con rancori mai sopiti e segreti inconfessati. Quella che dovrebbe essere una solenne cerimonia di commiato si trasforma ",
+    "c": [
+     {
+      "n": "Cinema Albatros",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10348_un-tranquillo-funera"
+       },
+       {
+        "h": "19:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ticket.cinebot.it/albatros/titolo/10348_un-tranquillo-funera"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "16:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "20:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema America",
+      "o": [
+       {
+        "h": "16:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/96599/3b809af3-a8d0-4867-a03d-25d7fc3c4bec#theater-init"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/96599/09cd42b6-6924-4e49-ac2f-b22ddb245c8a#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://america.ccgenova.18tickets.it/film/96599/f739f310-d788-4c8f-a3af-9513d1c3526b#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "Cinema San Pietro",
+      "o": [
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://sanpietro.ccgenova.18tickets.it/film/96599/6fabe144-caa8-41ed-9ffc-96adf3bda2a5#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Hope",
+    "g": [
+     "Fantascienza",
+     "Mistero",
+     "Azione"
+    ],
+    "d": 157,
+    "p": "https://image.tmdb.org/t/p/w342/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
+    "x": "I rinforzi sono stati richiamati per fronteggiare i devastanti incendi boschivi e ogni comunicazione con l’esterno è stata interrotta. Nel piccolo posto di polizia di Hope, il comandante Bum-seok e l’agente Sung-ae lottano per proteggere un",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:30",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:40",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "22:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003798/59586"
+       },
+       {
+        "h": "20:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003798/59542"
+       }
+      ]
+     },
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "VOS",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/98381/cef0e9cf-b00c-4b7b-8605-8cf087985048#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Shaun, vita da pecora - Operazione Z.U.C.C.A.",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Famiglia",
+     "Avventura",
+     "Horror"
+    ],
+    "d": 88,
+    "p": "https://image.tmdb.org/t/p/w342/hIgvOtvwbNCUclH0uBvg2qn6Ye.jpg",
+    "x": "Halloween è alle porte. Shaun e tutti gli animali della fattoria si preparano per festeggiarlo al meglio coltivando un magnifico campo di zucche. Ma quando tutto sembrava ormai pronto, il contadino misteriosamente scompare e arriva dal bosc",
+    "c": [
+     {
+      "n": "Filmclub",
+      "o": [
+       {
+        "h": "10:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/98447/0877640e-f491-4700-9d3b-1a495f4bbca0#theater-init"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "13:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "17:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/96699/63a4744e-c827-414c-acfe-dd0d3c71c734#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Clayface",
+    "g": [
+     "Horror",
+     "Thriller",
+     "Fantascienza"
+    ],
+    "d": 108,
+    "p": "https://image.tmdb.org/t/p/w342/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+    "x": "La terrificante discesa di un uomo, da astro nascente di Hollywood a mostro assetato di vendetta, in una storia che esplora la perdita di identità e umanità, l’amore corrosivo e il lato oscuro dell’ambizione scientifica.",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "13:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "22:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Digger",
+    "g": [
+     "Commedia"
+    ],
+    "d": 129,
+    "p": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+    "x": "Su richiesta del Presidente degli Stati Uniti, il magnate del petrolio Digger Rockwell deve salvare la Terra da un disastro ambientale causato dalla sua stessa azienda.",
+    "c": [
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/88750/fad08310-3b07-4ec3-a48e-54a71ed34b5f#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/88750/1a051fea-2ed6-4a80-992a-54dee5d0819d#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/88751/d3e00397-b4b0-447b-833a-8b30f2017ebf#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Fatherland",
+    "g": [
+     "Dramma",
+     "Storia"
+    ],
+    "d": 82,
+    "p": "https://image.tmdb.org/t/p/w342/7VjwmvDG5mksJBXMcmK6PudqH88.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cinema Ariston",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93169/1208120a-2fd3-4bb5-b695-d0b0b1369468#theater-init"
+       },
+       {
+        "h": "17:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93169/99846b09-2171-4609-93e1-ca5b343d6c11#theater-init"
+       },
+       {
+        "h": "19:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93169/4e2fe6d1-07e0-446b-92cb-efbc9e132f6b#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ice Cream Man",
+    "g": [
+     "Commedia",
+     "Horror",
+     "Thriller"
+    ],
+    "d": 86,
+    "p": "https://image.tmdb.org/t/p/w342/A6XDkLE53nAHKxkBZQmARLkjJ7U.jpg",
+    "x": "Un'idilliaca cittadina di villeggiatura estiva precipita nell’orrore, quando un gelataio offre ai bambini dolci prelibatezze dalle conseguenze terrificanti.",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "22:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003831/59538"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "22:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "23:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Je so’ pazzo",
+    "g": [
+     "Dramma",
+     "Musica"
+    ],
+    "d": 120,
+    "p": "https://image.tmdb.org/t/p/w342/impo3YqfZZbJUI3woorG0OYV3XI.jpg",
+    "x": "Je so’ pazzo è un ritratto intenso di Pino Daniele, un’anima ribelle nata nei vicoli di Napoli, che ha rivoluzionato la musica italiana fondendo blues, jazz e tradizione partenopea.  Il film racconta la sua ascesa, dagli anni difficili dell",
+    "c": [
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "11:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/98480/2b5f0ce7-61b3-42c0-9e0f-7c020c0cf3ab#theater-init"
+       },
+       {
+        "h": "17:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/93167/5c94952b-530e-4187-a929-0af807093463#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/93167/b032f5f1-c5c3-4a8e-9ba0-1897506eeaa4#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Minotaur",
+    "g": [
+     "Dramma",
+     "Crime",
+     "Thriller"
+    ],
+    "d": 135,
+    "p": "https://image.tmdb.org/t/p/w342/bM37B5CuMWrPyGPpNsKzTGict4Q.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cinema Ariston",
+      "o": [
+       {
+        "h": "15:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/96665/8af736b2-804e-471a-85a8-4357a3ea1f37#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/96665/70066c38-b783-486c-bc70-c5cc059ea29c#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/96665/8a66f57a-8262-4445-84d9-e8d17d4b9f50#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ragione e sentimento",
+    "g": [
+     "Dramma",
+     "Romance"
+    ],
+    "d": 132,
+    "p": "https://image.tmdb.org/t/p/w342/bwZCHb0qCFP2QT3QylGixpsNo8D.jpg",
+    "x": "La storia segue le vicende delle sorelle Elinor e Marianne Dashwood che, insieme alla madre e alla sorella minore Margaret, si ritrovano improvvisamente in ristrettezze economiche dopo la morte del padre, la cui eredità passa interamente al",
+    "c": [
+     {
+      "n": "Cinema Corallo",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/94817/515c5060-63da-4252-8a25-45233eebefc4#theater-init"
+       },
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/94817/2866966b-7082-4e10-afca-14809fe1b7d2#theater-init"
+       },
+       {
+        "h": "21:00",
+        "l": "VOS",
+        "f": "",
+        "u": "https://corallo.ccgenova.18tickets.it/film/94818/afb0b638-1478-46ca-8ed2-bda50555992a#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Wildwood - I segreti del bosco proibito",
+    "g": [
+     "Animazione",
+     "Avventura",
+     "Fantasy"
+    ],
+    "d": 132,
+    "p": "https://image.tmdb.org/t/p/w342/54qDl2tQh8iotrm3lX1VdxtnRZ.jpg",
+    "x": "Wildwood, nei dintorni di Portland, è un posto da cui tenersi lontani e che dovrebbe rimanere nascosto a tutti. Prue McKeel, tuttavia, è costretta a raggiungerlo dopo che il fratellino Mac è stato rapito da uno stormo di corvi e trasportato",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "14:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "17:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003740/59531"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Calle Málaga",
+    "g": [
+     "Dramma"
+    ],
+    "d": 116,
+    "p": "https://image.tmdb.org/t/p/w342/fWagBXNDk44UaupYtwQOAvDwGiT.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cineclub Nickelodeon",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.liveticket.it/evento.aspx?Id=711464&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcineclubnickelodeon"
+       }
+      ]
+     },
+     {
+      "n": "Cineclub Fritz Lang",
+      "o": [
+       {
+        "h": "18:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.fritzlang.it/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "It Ends",
+    "g": [
+     "Horror",
+     "Mistero"
+    ],
+    "d": 89,
+    "p": "https://image.tmdb.org/t/p/w342/6dfAGvZWbJnzWfSZ8gxFj63BNAH.jpg",
+    "x": "Quattro amici appena diplomati partono per un giro in auto a tarda notte, sperando di godersi un’ultima serata insieme prima che le loro vie si dividano, ma si ritrovano intrappolati in una misteriosa strada senza fine, circondati da fenome",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "19:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "La casa delle donne",
+    "g": [],
+    "d": 98,
+    "p": "https://image.tmdb.org/t/p/w342/9djjPVkmoF9O0NLmq9OJoesfhyq.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Filmclub",
+      "o": [
+       {
+        "h": "15:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/96700/4592e3c7-5503-47e1-9f55-c22e8ddff63d#theater-init"
+       },
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/96700/1e564fb4-7e21-4136-937a-b9db53ddebfc#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Taddeo l’esploratore e la lampada magica",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Famiglia"
+    ],
+    "d": 94,
+    "p": "https://image.tmdb.org/t/p/w342/71G1b8bqa7gzP9yU7q2fgNf2t0D.jpg",
+    "x": "Taddeo e Sara sono diventati genitori della piccola Oli. Durante una vacanza a Londra, trovano la Lampada delle Mille e una Notte. Un desiderio inaspettato della Momia fa viaggiare il gruppo nel tempo: dovranno attraversare diverse epoche, ",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:05",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003586/59539"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Elaha",
+    "g": [
+     "Dramma"
+    ],
+    "d": 110,
+    "p": "https://image.tmdb.org/t/p/w342/9cFi5IHILZB2UQWMywGGp7n23qx.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cineclub Nickelodeon",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.liveticket.it/evento.aspx?Id=711465&InstantBuy=1&CallingPageUrl=http%3a%2f%2fwww.liveticket.it%2fcineclubnickelodeon"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Elon Musk Uncovered: Das Tesla-Experiment",
+    "g": [
+     "Documentario"
+    ],
+    "d": 90,
+    "p": "https://image.tmdb.org/t/p/w342/3zQwMGwaqJnYefiMUvTd4bDeokX.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Filmclub",
+      "o": [
+       {
+        "h": "18:00",
+        "l": "VOS",
+        "f": "",
+        "u": "https://carignano.ccgenova.18tickets.it/film/98481/b9c8d547-da9f-47bc-804b-e561854c7516#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Fast and Furious",
+    "g": [
+     "Azione",
+     "Crime",
+     "Thriller"
+    ],
+    "d": 106,
+    "p": "https://image.tmdb.org/t/p/w342/fMhRkSfn1gA7RriWlSAk9yCuZWp.jpg",
+    "x": "Per la strade di Los Angeles, gli amanti di motori e velocità competono in gare clandestine, sfrecciando su automobili dalle carene fiammanti e dai carburanti pompati a protossido di azoto. Incaricato di indagare su un clan di rapinatori ch",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "19:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ferine",
+    "g": [
+     "Horror",
+     "Dramma"
+    ],
+    "d": 105,
+    "p": "https://image.tmdb.org/t/p/w342/jwFXsXC7bBBZipa6moVlxTsYh8H.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "22:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Frankie e le creature dimenticate",
+    "g": [
+     "Animazione",
+     "Avventura",
+     "Famiglia",
+     "Commedia"
+    ],
+    "d": 91,
+    "p": "https://image.tmdb.org/t/p/w342/AaDoLXs4D22i65OLw7HxMkj5sKN.jpg",
+    "x": "Stitch Head è stata la prima creatura riportata a una “quasi vita” dal folle professor Erasmus. Negli anni successivi è diventato il custode della sempre più ampia collezione di creature trascurate del suo padrone, con il compito di insegna",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "11:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "George Michael: The Faith Tour",
+    "g": [
+     "Musica",
+     "Documentario"
+    ],
+    "d": 113,
+    "p": "https://image.tmdb.org/t/p/w342/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "19:00",
+        "l": "VOS",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Goat - Sogna in Grande",
+    "g": [
+     "Animazione",
+     "Commedia",
+     "Famiglia",
+     "Azione"
+    ],
+    "d": 100,
+    "p": "https://image.tmdb.org/t/p/w342/2iobI8LOcnu3nyCSgmqux2dtkrV.jpg",
+    "x": "Will, una piccola capra con grandi sogni, all’improvviso ha l’occasione di entrare nella lega professionistica di “pallaruggente”, uno sport ad alto tasso di adrenalina, dominato dagli animali più veloci e feroci del pianeta. I suoi nuovi c",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "11:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003425/59233"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Ho sognato un angelo",
+    "g": [
+     "Dramma",
+     "Romance"
+    ],
+    "d": 125,
+    "p": "https://image.tmdb.org/t/p/w342/7ulGTVdIXlNkBhuxYQs0x88O82H.jpg",
+    "x": "Il matrimonio di Julie e Roger Adams (Irene Dunne e Cary Grant) sembra ormai volgere al termine, ma la donna decide di ripercorrere la propria vicenda di coppia riascoltando vecchi dischi. Sul filo della memoria finirà per rievocare le tapp",
+    "c": [
+     {
+      "n": "Cinema Sivori",
+      "o": [
+       {
+        "h": "11:00",
+        "l": "VOS",
+        "f": "",
+        "u": "https://sivori.ccgenova.18tickets.it/film/98448/361c85ea-e65c-4878-b44e-cf7e9678e656#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Il Gruffalo' e la Sua P+bastoncino Aut.",
+    "g": [],
+    "d": 0,
+    "p": "",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:40",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Il Gruffalo' e la Sua Picc + Bastoncino",
+    "g": [],
+    "d": 0,
+    "p": "",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "10:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "L'estranea",
+    "g": [
+     "Dramma",
+     "Thriller"
+    ],
+    "d": 115,
+    "p": "https://image.tmdb.org/t/p/w342/6GisyPsQBvnpgMKXqtPuwJqpZzl.jpg",
+    "x": "La trama ruota attorno a una donna che si presenta all’improvviso a casa di sua figlia per raccontarle la verità sulla loro famiglia, segnata da un patto stretto molti anni prima con un’estranea. Un segreto custodito troppo a lungo, che ora",
+    "c": [
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "20:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/91123/75e70c90-d555-424c-85f1-3d5ea07393b0#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Le Cose Non Dette",
+    "g": [
+     "Dramma"
+    ],
+    "d": 114,
+    "p": "https://image.tmdb.org/t/p/w342/sK4MZKEzQk5ajgLKI8QnU129UdY.jpg",
+    "x": "Tra Tangeri e Roma, le fragilità, i desideri, le insidie e i momenti di luce nei rapporti tra donne e uomini, madri e figlie, amanti e disincanti. La sottilissima linea tra bene e male e di ciò che scorre in mezzo alle nostre vite travolgen",
+    "c": [
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "11:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003361/59248"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "NAZA",
+    "g": [
+     "Documentario"
+    ],
+    "d": 80,
+    "p": "https://image.tmdb.org/t/p/w342/aXlTjDmbYVNjGWt256MWeYVKFN.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Club Amici del Cinema",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "http://www.clubamicidelcinema.it/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Nel silenzio delle stanze",
+    "g": [
+     "Dramma",
+     "Storia"
+    ],
+    "d": 103,
+    "p": "https://image.tmdb.org/t/p/w342/r47BxFNFATfapHfQ2m4iHYgZwVc.jpg",
+    "x": "Normandia, 1908. Céleste è una giovane domestica che lavora nella grande villa di André, un ricco notaio, e sua moglie Victoire, una donna oppressa dalle convenzioni borghesi che la vogliono moglie modello. Un giorno Victoire scopre che Cél",
+    "c": [
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "21:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/96703/4d1cd7a3-57c8-4bda-bdd5-b9490b86e5fd#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Odissea",
+    "g": [
+     "Avventura",
+     "Azione",
+     "Fantasy"
+    ],
+    "d": 172,
+    "p": "https://image.tmdb.org/t/p/w342/5S4U3gM7N17ni028LJhO60zfcKJ.jpg",
+    "x": "Ulisse, il leggendario re greco di Itaca, intraprende un lungo e pericoloso viaggio verso casa dopo la guerra di Troia, raccontando i suoi incontri con esseri mitici come il ciclope Polifemo, le Sirene e la dea strega Circe.",
+    "c": [
+     {
+      "n": "Club Amici del Cinema",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "",
+        "u": "http://www.clubamicidelcinema.it/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "The Nameless Ballad",
+    "g": [
+     "Horror"
+    ],
+    "d": 87,
+    "p": "https://image.tmdb.org/t/p/w342/g691fkK4mB5GCFziGG7gZP6oP2Y.jpg",
+    "x": "Sam Gallo (Jamie Ward) è un giovane musicista di successo dalla personalità fragile e introversa. Schiacciato dalla pressione di dover creare nuove canzoni e tormentato da dipendenze che non riesce a superare, Sam si ritira in una villa ita",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "22:20",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Vaterland",
+    "g": [
+     "Documentario"
+    ],
+    "d": 98,
+    "p": "https://image.tmdb.org/t/p/w342/3MSvbMwNxV8tgxdcvEXrUlW9c7D.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "Cinema Ariston",
+      "o": [
+       {
+        "h": "21:15",
+        "l": "VOS",
+        "f": "",
+        "u": "https://ariston.ccgenova.18tickets.it/film/93170/f93f9274-d7c6-441e-be00-987dfc56bde9#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Zustìssia",
+    "g": [
+     "Dramma"
+    ],
+    "d": 111,
+    "p": "https://image.tmdb.org/t/p/w342/15IfVZjAiwUkTx7Bib58wJTjOSi.jpg",
+    "x": "Nel 1991, un triplice omicidio commesso sui monti del Sud Sardegna porta alla rapida condanna di un uomo innocente: Beniamino Zuncheddu. Tre gradi di giudizio in un anno per dare un ergastolo. Venticinque anni dopo, un giovane avvocato deci",
+    "c": [
+     {
+      "n": "Cinema City",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://city.ccgenova.18tickets.it/film/93200/abc33099-1c39-4e4f-9b98-a2d5d91bb9f7#theater-init"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
