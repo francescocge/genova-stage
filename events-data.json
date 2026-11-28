@@ -5,22 +5,22 @@
   "politeama": {
    "ok": true,
    "n": 74,
-   "data": "2026-11-27"
+   "data": "2026-11-28"
   },
   "nazionale": {
    "ok": true,
    "n": 93,
-   "data": "2026-11-27"
+   "data": "2026-11-28"
   },
   "carlofelice": {
    "ok": true,
-   "n": 22,
-   "data": "2026-11-27"
+   "n": 21,
+   "data": "2026-11-28"
   },
   "tosse": {
    "ok": true,
    "n": 6,
-   "data": "2026-11-27"
+   "data": "2026-11-28"
   }
  },
  "cinema": {
@@ -40,46 +40,6 @@
     "p": "locandine-cinema/hexe-il-regno-delle-streghe.jpg",
     "x": "Billie Doe, un'adolescente impulsiva e non convenzionale, scopre di avere abilità magiche che la portano dalla periferia a Hexe, un regno di streghe. Con la cauta madre Alice indaga sui segreti di famiglia legati al mondo delle streghe.",
     "c": [
-     {
-      "n": "The Space Cinema Porto Antico",
-      "o": [
-       {
-        "h": "14:00",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003604/59779"
-       },
-       {
-        "h": "16:45",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003604/59780"
-       },
-       {
-        "h": "18:50",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003604/59820"
-       }
-      ]
-     },
-     {
-      "n": "Cinema Odeon",
-      "o": [
-       {
-        "h": "16:00",
-        "l": "IT",
-        "f": "",
-        "u": "https://odeon.ccgenova.18tickets.it/film/104222/e9028b3f-1313-493a-a113-4f055b1ebb1d#theater-init"
-       },
-       {
-        "h": "18:15",
-        "l": "IT",
-        "f": "",
-        "u": "https://odeon.ccgenova.18tickets.it/film/104222/975cc500-4fca-4d7a-9d10-8ee16616dd04#theater-init"
-       }
-      ]
-     },
      {
       "n": "UCI Cinemas Fiumara",
       "o": [
@@ -149,6 +109,46 @@
         "u": "https://ticket.cinebot.it/albatros/titolo/11221_hexe-il-regno-delle"
        }
       ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003604/59779"
+       },
+       {
+        "h": "16:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003604/59780"
+       },
+       {
+        "h": "18:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003604/59820"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "16:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/104222/e9028b3f-1313-493a-a113-4f055b1ebb1d#theater-init"
+       },
+       {
+        "h": "18:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/104222/975cc500-4fca-4d7a-9d10-8ee16616dd04#theater-init"
+       }
+      ]
      }
     ]
    },
@@ -163,29 +163,6 @@
     "p": "locandine-cinema/hunger-games-l-alba-sulla-mietitura.jpg",
     "x": "",
     "c": [
-     {
-      "n": "The Space Cinema Porto Antico",
-      "o": [
-       {
-        "h": "14:00",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003465/59815"
-       },
-       {
-        "h": "17:30",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003465/59816"
-       },
-       {
-        "h": "21:45",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003465/59821"
-       }
-      ]
-     },
      {
       "n": "UCI Cinemas Fiumara",
       "o": [
@@ -246,6 +223,29 @@
       ]
      },
      {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "14:00",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003465/59815"
+       },
+       {
+        "h": "17:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003465/59816"
+       },
+       {
+        "h": "21:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003465/59821"
+       }
+      ]
+     },
+     {
       "n": "Cinema Odeon",
       "o": [
        {
@@ -267,6 +267,35 @@
     "p": "locandine-cinema/la-notte-delle-fragole.jpg",
     "x": "Valentino (Valentino Picone) ha una vita perfettamente organizzata, accanto alla moglie Elena (Anna Foglietta) e a Carolina (Giovanna Rosace), la figlia adolescente di lei. Il suo equilibrio viene però stravolto dall’arrivo di Salvo (Salvo ",
     "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "15:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "16:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "19:10",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
      {
       "n": "The Space Cinema Porto Antico",
       "o": [
@@ -335,35 +364,6 @@
         "u": "https://ticket.cinebot.it/albatros/titolo/11218_la-notte-delle-frago"
        }
       ]
-     },
-     {
-      "n": "UCI Cinemas Fiumara",
-      "o": [
-       {
-        "h": "15:30",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "16:50",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "19:10",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "21:30",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       }
-      ]
      }
     ]
    },
@@ -401,23 +401,6 @@
       ]
      },
      {
-      "n": "Cinema Odeon",
-      "o": [
-       {
-        "h": "18:45",
-        "l": "IT",
-        "f": "",
-        "u": "https://odeon.ccgenova.18tickets.it/film/99998/ccd2d6ea-4ab6-48c7-a192-d860a12cb833#theater-init"
-       },
-       {
-        "h": "21:15",
-        "l": "IT",
-        "f": "",
-        "u": "https://odeon.ccgenova.18tickets.it/film/99998/5f30eb52-b134-4ae8-b6c8-49edfc43d57f#theater-init"
-       }
-      ]
-     },
-     {
       "n": "The Space Cinema Porto Antico",
       "o": [
        {
@@ -437,6 +420,23 @@
         "l": "IT",
         "f": "",
         "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003866/59824"
+       }
+      ]
+     },
+     {
+      "n": "Cinema Odeon",
+      "o": [
+       {
+        "h": "18:45",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/99998/ccd2d6ea-4ab6-48c7-a192-d860a12cb833#theater-init"
+       },
+       {
+        "h": "21:15",
+        "l": "IT",
+        "f": "",
+        "u": "https://odeon.ccgenova.18tickets.it/film/99998/5f30eb52-b134-4ae8-b6c8-49edfc43d57f#theater-init"
        }
       ]
      }
@@ -704,23 +704,6 @@
     "x": "Un giovane di nome Henry, figlio di Greg e Pam Focker, si ritrova ad affrontare il caos familiare quando decide di sposare una donna volitiva che sembra essere completamente diversa dalla sua fidanzata ideale.",
     "c": [
      {
-      "n": "UCI Cinemas Fiumara",
-      "o": [
-       {
-        "h": "18:30",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "21:50",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       }
-      ]
-     },
-     {
       "n": "The Space Cinema Porto Antico",
       "o": [
        {
@@ -736,10 +719,27 @@
         "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003596/59764"
        },
        {
-        "h": "23:15",
+        "h": "23:05",
         "l": "IT",
         "f": "",
         "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003596/59857"
+       }
+      ]
+     },
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "18:30",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:50",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
        }
       ]
      }
@@ -759,17 +759,6 @@
     "x": "Scopri Il Gatto col Cappello come non l’hai mai visto prima! Dal meraviglioso e stravagante mondo di Dr. Seuss, Il Gatto col Cappello arriva per la prima volta sul grande schermo da protagonista di un film d’animazione: un’avventura epica, ",
     "c": [
      {
-      "n": "The Space Cinema Porto Antico",
-      "o": [
-       {
-        "h": "13:25",
-        "l": "IT",
-        "f": "",
-        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003165/59818"
-       }
-      ]
-     },
-     {
       "n": "UCI Cinemas Fiumara",
       "o": [
        {
@@ -783,6 +772,17 @@
         "l": "IT",
         "f": "",
         "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       }
+      ]
+     },
+     {
+      "n": "The Space Cinema Porto Antico",
+      "o": [
+       {
+        "h": "13:25",
+        "l": "IT",
+        "f": "",
+        "u": "https://www.thespacecinema.it/prenotare-il-biglietto/summary/1008/HO00003165/59818"
        }
       ]
      },
@@ -839,49 +839,6 @@
         "l": "IT",
         "f": "",
         "u": "https://sanpietro.ccgenova.18tickets.it/film/99932/f5470da3-6af7-494c-9fe1-bad26a7de2ec#theater-init"
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "t": "Le avventure di Cliff Booth",
-    "g": [
-     "Dramma",
-     "Commedia",
-     "Thriller",
-     "Crime"
-    ],
-    "d": 141,
-    "p": "locandine-cinema/le-avventure-di-cliff-booth.jpg",
-    "x": "",
-    "c": [
-     {
-      "n": "UCI Cinemas Fiumara",
-      "o": [
-       {
-        "h": "10:50",
-        "l": "VOS",
-        "f": "IMAX",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "15:00",
-        "l": "IT",
-        "f": "IMAX",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "18:10",
-        "l": "IT",
-        "f": "IMAX",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
-       },
-       {
-        "h": "21:20",
-        "l": "IT",
-        "f": "IMAX",
-        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
        }
       ]
      }
@@ -950,6 +907,43 @@
         "l": "IT",
         "f": "",
         "u": "https://corallo.ccgenova.18tickets.it/film/101978/33e271e9-ad34-4fcd-b63e-dcb7aeb04f25#theater-init"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "t": "Le avventure di Cliff Booth",
+    "g": [
+     "Dramma",
+     "Commedia",
+     "Thriller",
+     "Crime"
+    ],
+    "d": 141,
+    "p": "locandine-cinema/le-avventure-di-cliff-booth.jpg",
+    "x": "",
+    "c": [
+     {
+      "n": "UCI Cinemas Fiumara",
+      "o": [
+       {
+        "h": "15:00",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "18:10",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
+       },
+       {
+        "h": "21:20",
+        "l": "IT",
+        "f": "IMAX",
+        "u": "https://www.webtic.it/app/shopping/loadLocal/GE/5107"
        }
       ]
      }
@@ -1625,34 +1619,6 @@
    "img": "https://www.teatronazionalegenova.it/repository/eventi/horizontal/733.jpg?NC=288385"
   },
   {
-   "a": "L'alba dopo la fine della Storia",
-   "t": "Teatro Ivo Chiesa",
-   "v": "Teatro Nazionale di Genova",
-   "u": "https://www.teatronazionalegenova.it/eventi/2026-2027/l-alba-dopo-la-fine-della-storia.htm",
-   "s": "2026-11-24",
-   "e": "2026-11-25",
-   "c": "teatro",
-   "k": "Teatro",
-   "p": "",
-   "d": "24 - 25 Novembre 2026",
-   "src": "nazionale",
-   "img": "https://www.teatronazionalegenova.it/repository/eventi/horizontal/627.jpg?NC=207519"
-  },
-  {
-   "a": "Scherzo, malgrado tutto",
-   "t": "Sala Mercato",
-   "v": "Teatro Nazionale di Genova",
-   "u": "https://www.teatronazionalegenova.it/eventi/2026-2027/scherzo-magrado-tutto.htm",
-   "s": "2026-11-24",
-   "e": "2026-11-25",
-   "c": "teatro",
-   "k": "Teatro",
-   "p": "",
-   "d": "24 - 25 Novembre 2026",
-   "src": "nazionale",
-   "img": "https://www.teatronazionalegenova.it/repository/eventi/horizontal/618.jpg?NC=490756"
-  },
-  {
    "a": "Crave",
    "t": "Sala Mercato",
    "v": "Teatro Nazionale di Genova",
@@ -1721,20 +1687,6 @@
    "d": "27 - 29 Novembre 2026",
    "src": "nazionale",
    "img": "https://www.teatronazionalegenova.it/repository/eventi/horizontal/606.jpg?NC=233970"
-  },
-  {
-   "a": "Fino al",
-   "t": "",
-   "v": "Teatro Carlo Felice",
-   "u": "https://www.carlofelice.it/spettacolo/i-capuleti-e-i-montecchi/",
-   "s": "2026-11-27",
-   "e": "2026-11-27",
-   "c": "concerto",
-   "k": "Concerto",
-   "p": "",
-   "d": "27 Novembre 2026",
-   "src": "carlofelice",
-   "img": ""
   },
   {
    "a": "Olivia Trummer Trio - Gezmataz Jazz Festival",
@@ -1903,6 +1855,20 @@
    "d": "2 - 4 Dicembre 2026",
    "src": "tosse",
    "img": "https://teatrodellatosse.it/repository/eventi/horizontal/255.jpg?NC=1770810676"
+  },
+  {
+   "a": "Avamposto",
+   "t": "",
+   "v": "Teatro della Tosse",
+   "u": "https://teatrodellatosse.it/eventi/avamposto.htm",
+   "s": "2026-12-03",
+   "e": "2026-12-05",
+   "c": "teatro",
+   "k": "Teatro",
+   "p": "",
+   "d": "3 - 5 Dicembre 2026",
+   "src": "tosse",
+   "img": "https://teatrodellatosse.it/repository/eventi/horizontal/376.jpg?NC=1795705936"
   },
   {
    "a": "Lo Schiaccianoci",
